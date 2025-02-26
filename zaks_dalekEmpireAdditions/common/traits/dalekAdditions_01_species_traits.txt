@@ -1,0 +1,29 @@
+# Author: Zak
+# All these traits will be automatically assigned to dalek species
+
+trait_dalek_mutant = {
+    cost = 2 # the idea is that traits cannot be added or removed from daleks, either in the empire creator or during the game. Setting the cost to 2 (the default number of trait points available) will hopefully remove the default trait points
+    sorting_priotiy = 99
+    icon = "gfx/interface/icons/traits/trait_dalek_mutant.dds"
+    
+    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_class = { Dalek }
+    immortal_leaders = yes
+    infertile = yes
+    
+    modifier = {
+        species_leader_exp_gain = -0.5
+		pop_government_ethic_attraction = 0.75
+		species_empire_size_mult = -0.25
+		planet_pops_consumer_goods_upkeep_mult = -1.0
+    }
+
+}
