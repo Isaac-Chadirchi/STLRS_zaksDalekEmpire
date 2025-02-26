@@ -15,6 +15,7 @@ trait_dalek_mutant = {
     species_potential_remove = {
         always = no
     }
+    allowed_archetypes = { BIOLOGICAL }
     species_class = { Dalek }
     immortal_leaders = yes
     infertile = yes
@@ -23,7 +24,7 @@ trait_dalek_mutant = {
         species_leader_exp_gain = -0.5
 		pop_government_ethic_attraction = 0.75
 		species_empire_size_mult = -0.25
-		planet_pops_consumer_goods_upkeep_mult = -1.0
+		planet_pops_consumer_goods_upkeep_mult = -0.5
     }
 
 }
