@@ -23,9 +23,57 @@ trait_dalek_mutant = {
     modifier = {
         species_leader_exp_gain = -0.5
 		pop_government_ethic_attraction = 0.75
-		species_empire_size_mult = -0.25
 		planet_pops_consumer_goods_upkeep_mult = -0.5
+        pc_nuked_habitability = 0.7
     }
 
 }
 
+trait_travel_machine = {
+    cost = 0
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_travel_machine.dds"
+
+    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    modifier = {
+		army_damage_mult = 0.5
+		pop_environment_tolerance = 0.20
+		pop_housing_usage_mult = 0.1
+	}
+}
+
+trait_pathweb = {
+    cost = 0
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_pathweb.dds"
+
+    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    modifier = {
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
+		species_empire_size_mult = -0.25
+	}
+}
