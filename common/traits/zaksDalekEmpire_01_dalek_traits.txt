@@ -7,7 +7,7 @@ trait_kaled_mutant = {
     sorting_priotiy = 99
     icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
     
-    initial = yes
+    initial = no
     randomized = no
     modification = no
     species_potential_add = {
@@ -17,7 +17,7 @@ trait_kaled_mutant = {
         always = no
     }
     allowed_archetypes = { BIOLOGICAL }
-    species_class = { Dalek }
+    species_class = { DALEK }
 
     immortal_leaders = yes
     infertile = yes
@@ -34,7 +34,7 @@ trait_dalek_conditioning = {
     sorting_priotiy = 98
     icon = "gfx/interface/icons/traits/trait_dalek_conditioning.dds"
 
-    initial = yes
+    initial = no
     randomized = no
     modification = no
     species_potential_add = {
@@ -44,7 +44,7 @@ trait_dalek_conditioning = {
         always = no
     }
     allowed_archetypes = { BIOLOGICAL }
-    species_class = { Dalek }
+    species_class = { DALEK }
 
     forced_happiness = yes
     modifier = {
@@ -59,10 +59,10 @@ trait_dalek_conditioning = {
 
 trait_travel_machine = {
     cost = 1
-    sorting_priotiy = 98
+    sorting_priotiy = 97
     icon = "gfx/interface/icons/traits/trait_travel_machine.dds"
 
-    initial = yes
+    initial = no
     randomized = no
     modification = no
     species_potential_add = {
@@ -72,7 +72,7 @@ trait_travel_machine = {
         always = no
     }
     allowed_archetypes = { BIOLOGICAL }
-    species_class = { Dalek }
+    species_class = { DALEK }
 
     modifier = {
 		army_health = 0.25
@@ -84,10 +84,10 @@ trait_travel_machine = {
 
 trait_pathweb = {
     cost = 1
-    sorting_priotiy = 98
+    sorting_priotiy = 96
     icon = "gfx/interface/icons/traits/trait_pathweb.dds"
 
-    initial = yes
+    initial = no
     randomized = no
     modification = no
     species_potential_add = {
@@ -97,7 +97,7 @@ trait_pathweb = {
         always = no
     }
     allowed_archetypes = { BIOLOGICAL }
-    species_class = { Dalek }
+    species_class = { DALEK }
 
     modifier = {
 		planet_jobs_physics_research_produces_mult = 0.10

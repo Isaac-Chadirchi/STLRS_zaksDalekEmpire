@@ -1,0 +1,12 @@
+# Author: VelociRandom, Modified by Zak
+
+# Categories of portrait sets used in empire design view.
+# Portrait sets are listed in portrait_sets database.
+
+DalekPortraits = {				# Category internal name I think
+	name = Dalek				# Category display name
+
+	sets = {
+		DalekPortraits			# This is what appears in that category
+	}
+}

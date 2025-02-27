@@ -1,4 +1,6 @@
-﻿l_english:
+﻿# Author: Zak
+
+l_english:
  trait_kaled_mutant:0 "Kaled Mutant"
  trait_kaled_mutant_desc:0 "The Daleks are actually the mutated descendants of the Kaleds, and were genetically engineered by the Kaled scientist Davros at the end of the Thousand Year War between the Kaleds and the Thals."
  trait_dalek_conditioning:0 "Dalek Conditioning"
