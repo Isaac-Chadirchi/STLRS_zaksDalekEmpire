@@ -1,11 +1,11 @@
 ﻿# Author: Zak
 
 l_english:
- trait_kaled_mutant:0 "Kaled Mutant"
- trait_kaled_mutant_desc:0 "The Daleks are actually the mutated descendants of the Kaleds, and were genetically engineered by the Kaled scientist Davros at the end of the Thousand Year War between the Kaleds and the Thals."
- trait_dalek_conditioning:0 "Dalek Conditioning"
- trait_dalek_conditioning_desc:0 "In addition to their genetic engineering, the Daleks are conditioned for absolute obedience. The average drone possesses little individual personality."
- trait_travel_machine:0 "Travel Machine"
- trait_travel_machine_desc:0 "The Kaled mutant is housed within an armoured shell, called a Travel Machine"
- trait_pathweb:0 "Pathweb"
- trait_pathweb_desc:0 "The Pathweb, also known as the command network, or the Dalek galactic hive mind, is the shared intelligence of the Daleks, containing information on their history and experiences."
+trait_kaled_mutant:0 "Kaled Mutant"
+trait_kaled_mutant_desc:0 "The Daleks are actually the mutated descendants of the Kaleds, and were genetically engineered by the Kaled scientist Davros at the end of the Thousand Year War between the Kaleds and the Thals."
+trait_dalek_conditioning:0 "Dalek Conditioning"
+trait_dalek_conditioning_desc:0 "In addition to their genetic engineering, the Daleks are conditioned for absolute obedience. The average drone possesses little individual personality."
+trait_travel_machine:0 "Travel Machine"
+trait_travel_machine_desc:0 "The Kaled mutant is housed within an armoured shell, called a Travel Machine"
+trait_pathweb:0 "Pathweb"
+trait_pathweb_desc:0 "The Pathweb, also known as the command network, or the Dalek galactic hive mind, is the shared intelligence of the Daleks, containing information on their history and experiences."

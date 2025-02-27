@@ -1,9 +1,0 @@
-# Author: Zak
-
-@dalek_trait_points = 0
-@dalek_max_traits = 0
-
-DALEK = {
-    species_trait_points = @dalek_trait_points
-    species_max_traits = @dalek_max_traits
-}

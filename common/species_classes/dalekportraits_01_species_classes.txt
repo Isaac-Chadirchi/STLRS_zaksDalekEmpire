@@ -1,7 +1,7 @@
 # Author: VelociRandom, Modified by Zak
 
-DALEK_01 = {
-	archetype = DALEK
+DALEK = {
+	archetype = BIOLOGICAL
 	possible = {
 		authority = {
 			NOT = {
