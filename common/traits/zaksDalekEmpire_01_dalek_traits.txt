@@ -1,12 +1,13 @@
 # Author: Zak
 # All these traits will be automatically assigned to dalek species
+# TODO: once autotrait implemented, change initial to no
 
-trait_dalek_mutant = {
-    cost = 2 # the idea is that traits cannot be added or removed from daleks, either in the empire creator or during the game. Setting the cost to 2 (the default number of trait points available) will hopefully remove the default trait points
+trait_kaled_mutant = {
+    cost = -1
     sorting_priotiy = 99
-    icon = "gfx/interface/icons/traits/trait_dalek_mutant.dds"
+    icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
     
-    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -17,24 +18,51 @@ trait_dalek_mutant = {
     }
     allowed_archetypes = { BIOLOGICAL }
     species_class = { Dalek }
+
     immortal_leaders = yes
     infertile = yes
-    
+
     modifier = {
-        species_leader_exp_gain = -0.5
-		pop_government_ethic_attraction = 0.75
-		planet_pops_consumer_goods_upkeep_mult = -0.5
+        army_collateral_damage_mult = 1
         pc_nuked_habitability = 0.7
     }
 
 }
 
+trait_dalek_conditioning = {
+    cost = 1
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_dalek_conditioning.dds"
+
+    initial = yes
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    forced_happiness = yes
+    modifier = {
+        pop_ethics_shift_speed_mult = -0.9
+        pop_government_ethic_attraction = 0.75
+        army_experience_gain_mult = -0.75
+        species_leader_exp_gain = -0.75
+        army_morale = 0.75
+        army_disengage_chance = -0.75
+    }
+}
+
 trait_travel_machine = {
-    cost = 0
+    cost = 1
     sorting_priotiy = 98
     icon = "gfx/interface/icons/traits/trait_travel_machine.dds"
 
-    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -47,18 +75,19 @@ trait_travel_machine = {
     species_class = { Dalek }
 
     modifier = {
-		army_damage_mult = 0.5
+		army_health = 0.25
+        army_damage_mult = 0.5
+        army_alloys_cost_mult = 25
 		pop_environment_tolerance = 0.20
-		pop_housing_usage_mult = 0.1
 	}
 }
 
 trait_pathweb = {
-    cost = 0
+    cost = 1
     sorting_priotiy = 98
     icon = "gfx/interface/icons/traits/trait_pathweb.dds"
 
-    initial = yes # will be 'no' in later versions, but for now I need to debug so it's yes for the time being
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
