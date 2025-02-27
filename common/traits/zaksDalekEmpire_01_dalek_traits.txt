@@ -1,0 +1,108 @@
+# Author: Zak
+# All these traits will be automatically assigned to dalek species
+# TODO: once autotrait implemented, change initial to no
+
+trait_kaled_mutant = {
+    cost = -1
+    sorting_priotiy = 99
+    icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
+    
+    initial = yes
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    immortal_leaders = yes
+    infertile = yes
+
+    modifier = {
+        army_collateral_damage_mult = 1
+        pc_nuked_habitability = 0.7
+    }
+
+}
+
+trait_dalek_conditioning = {
+    cost = 1
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_dalek_conditioning.dds"
+
+    initial = yes
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    forced_happiness = yes
+    modifier = {
+        pop_ethics_shift_speed_mult = -0.9
+        pop_government_ethic_attraction = 0.75
+        army_experience_gain_mult = -0.75
+        species_leader_exp_gain = -0.75
+        army_morale = 0.75
+        army_disengage_chance = -0.75
+    }
+}
+
+trait_travel_machine = {
+    cost = 1
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_travel_machine.dds"
+
+    initial = yes
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    modifier = {
+		army_health = 0.25
+        army_damage_mult = 0.5
+        army_alloys_cost_mult = 25
+		pop_environment_tolerance = 0.20
+	}
+}
+
+trait_pathweb = {
+    cost = 1
+    sorting_priotiy = 98
+    icon = "gfx/interface/icons/traits/trait_pathweb.dds"
+
+    initial = yes
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    allowed_archetypes = { BIOLOGICAL }
+    species_class = { Dalek }
+
+    modifier = {
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
+		species_empire_size_mult = -0.25
+	}
+}
