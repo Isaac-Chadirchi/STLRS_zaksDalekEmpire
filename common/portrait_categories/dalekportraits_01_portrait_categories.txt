@@ -5,7 +5,6 @@
 
 DalekPortraits = {				# Category internal name I think
 	name = Dalek				# Category display name
-
 	sets = {
 		DalekPortraits			# This is what appears in that category
 	}

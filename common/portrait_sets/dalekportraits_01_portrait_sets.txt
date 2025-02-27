@@ -1,8 +1,7 @@
 # Author: VelociRandom, Modified by Zak
 
 DalekPortraits = {
-	species_class = Dalek		# Was DLK
-
+	species_class = DALEK
 	portraits = {
 		"dalekportrait1"
 	}
