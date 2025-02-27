@@ -3,7 +3,7 @@
 # TODO: once autotrait implemented, change initial to no
 
 trait_dalek = {
-    cost = -1
+    cost = 2
     sorting_priotiy = 99
     icon = "gfx/interface/icons/traits/trait_dalek.dds"
     
