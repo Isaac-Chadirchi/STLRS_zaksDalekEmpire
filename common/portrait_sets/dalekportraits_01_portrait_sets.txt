@@ -1,0 +1,12 @@
+# Author: VelociRandom, Modified by Zak
+
+DalekPortraits = {
+	species_class = DALEK
+	portraits = {
+		"dalekportrait1"
+	}
+	 # These should not be used for randomly generated species
+	non_randomized_portraits = {
+    	dalekportrait1
+    }
+}
