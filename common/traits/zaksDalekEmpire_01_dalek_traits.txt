@@ -30,7 +30,7 @@ trait_kaled_mutant = {
 }
 
 trait_dalek_conditioning = {
-    cost = 1
+    cost = -1
     sorting_priotiy = 98
     icon = "gfx/interface/icons/traits/trait_dalek_conditioning.dds"
 
