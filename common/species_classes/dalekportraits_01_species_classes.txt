@@ -1,7 +1,7 @@
 # Author: VelociRandom, Modified by Zak
 
-DALEK = {
-	archetype = BIOLOGICAL
+DALEK_01 = {
+	archetype = DALEK
 	possible = {
 		authority = {
 			NOT = {
@@ -12,6 +12,6 @@ DALEK = {
 	}
 	graphical_culture = dalekportraits_01
 	move_pop_sound_effect = "moving_pop_confirmation"
-	trait = trait_kaled_mutant
+	gender = no
 }
 

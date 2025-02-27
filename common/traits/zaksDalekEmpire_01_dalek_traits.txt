@@ -3,11 +3,11 @@
 # TODO: once autotrait implemented, change initial to no
 
 trait_kaled_mutant = {
-    cost = 2
+    cost = 0
     sorting_priotiy = 99
     icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
     
-    initial = no
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -16,8 +16,7 @@ trait_kaled_mutant = {
     species_potential_remove = {
         always = no
     }
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
+    allowed_archetypes = { DALEK }
 
     immortal_leaders = yes
     infertile = yes
@@ -34,7 +33,7 @@ trait_dalek_conditioning = {
     sorting_priotiy = 98
     icon = "gfx/interface/icons/traits/trait_dalek_conditioning.dds"
 
-    initial = no
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -43,8 +42,7 @@ trait_dalek_conditioning = {
     species_potential_remove = {
         always = no
     }
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
+    allowed_archetypes = { DALEK }
 
     forced_happiness = yes
     modifier = {
@@ -62,7 +60,7 @@ trait_travel_machine = {
     sorting_priotiy = 97
     icon = "gfx/interface/icons/traits/trait_travel_machine.dds"
 
-    initial = no
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -71,8 +69,7 @@ trait_travel_machine = {
     species_potential_remove = {
         always = no
     }
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
+    allowed_archetypes = { DALEK }
 
     modifier = {
 		army_health = 0.25
@@ -87,7 +84,7 @@ trait_pathweb = {
     sorting_priotiy = 96
     icon = "gfx/interface/icons/traits/trait_pathweb.dds"
 
-    initial = no
+    initial = yes
     randomized = no
     modification = no
     species_potential_add = {
@@ -96,8 +93,7 @@ trait_pathweb = {
     species_potential_remove = {
         always = no
     }
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
+    allowed_archetypes = { DALEK }
 
     modifier = {
 		planet_jobs_physics_research_produces_mult = 0.10
