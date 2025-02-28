@@ -24,7 +24,7 @@ skaro_system_initializer = {
     }
 
     # Sets the system to only be used by custom empires
-    usage = custom_empire
+    usage = custom_empire # will be replaced with origin once custom origin added
     flags = { empire_home_system }
     init_effect = { # Standard empire home system init
 		every_neighbor_system = {
@@ -49,7 +49,7 @@ skaro_system_initializer = {
     planet = {
         name = "Galkorin"
         class = pc_molten
-        orbit_distance = 30
+        orbit_distance = 35
         orbit angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
@@ -60,20 +60,20 @@ skaro_system_initializer = {
     planet = {
         name = "Vestinga"
         class = pc_molten
-        orbit_distance = 10
+        orbit_distance = 5
         orbit_angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
     }
 
-    # Planet 3 - Haarfaro
-    # Name is a combination of the Dalek word 'Haarfa' (a mist that envelops large areas of Skaro) and the Kaled word 'Skaro' (which meant home), to give an approximation of the name 'Home of the mist'. So named because it's a toxic world. Planet type is toxic due to me coming up with the name before the planet
+    # Planet 3 - Yarenin
+    # Name dereived from the Dalek word 'Yaren', meaning 'to be fast, quick, or speedy'. So named because I needed a name. Planet type is molten due to it being so close to a powerful star
     planet = {
-        name = "Haarfaro"
-        class = pc_toxic
-        orbit_distance = 15
+        name = "Yarenin"
+        class = pc_molten
+        orbit_distance = 5
         orbit_angle = { min = 90 max = 270 }
-        size = 14
+        size = 10
         has_ring = no
     }
 
@@ -82,20 +82,20 @@ skaro_system_initializer = {
     planet = {
         name = "Efienin"
         class = pc_molten
-        orbit_distance = 15
+        orbit_distance = 10
         orbit_angle = { min = 90 max = 270 }
-        size = 20
+        size = 12
         has_ring = no
     }
 
-    # Planet 5 - Yarenin
-    # Name dereived from the Dalek word 'Yaren', meaning 'to be fast, quick, or speedy'. So named because I needed a name. Planet type is molten due to it being so close to a powerful star
+    # Planet 5 - Haarfaro
+    # Name is a combination of the Dalek word 'Haarfa' (a mist that envelops large areas of Skaro) and the Kaled word 'Skaro' (which meant home), to give an approximation of the name 'Home of the mist'. So named because it's a toxic world. Planet type is toxic due to me coming up with the name before the planet
     planet = {
-        name = "Yarenin"
-        class = pc_molten
-        orbit_distance = 15
+        name = "Haarfaro"
+        class = pc_toxic
+        orbit_distance = 20
         orbit_angle = { min = 90 max = 270 }
-        size = 8
+        size = 14
         has_ring = no
     }
 
@@ -104,7 +104,7 @@ skaro_system_initializer = {
     planet = {
         name = "Fortenin"
         class = pc_broken
-        orbit_distance = 15
+        orbit_distance = 25
         orbit_angle = { min = 90 max = 270 }
         size = 15
         has_ring = no
@@ -115,9 +115,9 @@ skaro_system_initializer = {
     planet = {
         name = "Preblinga"
         class = pc_barren
-        orbit_distance = 15
+        orbit_distance = 25
         orbit_angle = { min = 90 max = 270 }
-        size = 18
+        size = 10
         has_ring = no
     }
 
@@ -126,9 +126,9 @@ skaro_system_initializer = {
     planet = {
         name = "Kaaga"
         class = pc_barren
-        orbit_distance = 10
+        orbit_distance = 5
         orbit_angle = { min = 90 max = 270 }
-        size = 12
+        size = 10
         has_ring = no
     }
 
@@ -137,9 +137,9 @@ skaro_system_initializer = {
     planet = {
         name = "Xerodin"
         class = pc_barren
-        orbit_distance = 10
+        orbit_distance = 5
         orbit_angle = { min = 90 max = 270 }
-        size = 12
+        size = 10
         has_ring = no
     }
 
@@ -169,9 +169,9 @@ skaro_system_initializer = {
         moon = {
             name = "Varnicon"
             class = pc_ocean
-            orbit_distance = 12
+            orbit_distance = 18
             orbit_angle = { min = 90 max = 270 }
-            size = 10
+            size = 7
             has_ring = no
         }
 
@@ -182,7 +182,7 @@ skaro_system_initializer = {
             class = pc_continental
             orbit_distance = 2
             orbit_angle = { min = 90 max = 270 }
-            size = 10
+            size = 7
             has_ring = no
         }
 
@@ -193,7 +193,7 @@ skaro_system_initializer = {
             class = pc_alpine
             orbit_distance = 2
             orbit_angle = { min = 90 max = 270 }
-            size = 10
+            size = 7
             has_ring = no
         }
 
@@ -204,7 +204,7 @@ skaro_system_initializer = {
             class = pc_tundra
             orbit_distance = 2
             orbit_angle = { min = 90 max = 270 }
-            size = 10
+            size = 7
             has_ring = no
         }
     }
@@ -218,10 +218,9 @@ skaro_system_initializer = {
         orbit_angle = { min = 90 max = 270 }
         size = 22
         has_ring = no
+        starting_planet = yes
         init_effect = {
-            set_planet_entity = {
-                atmosphere_color = hsv { 0.036 0.976 0.667}
-            }
+            prevent_anomaly = yes
         }
 
         # Moon 12-1 - Fildor

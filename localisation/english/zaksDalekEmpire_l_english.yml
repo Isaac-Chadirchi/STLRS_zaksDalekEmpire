@@ -1,5 +1,14 @@
 ﻿# Author: Zak
 
 l_english:
-trait_dalek:0 "Dalek"
-trait_dalek_desc:0 "Created by the Kaled scientist Davros in the dying days of the Thousand Year War, the Daleks are a race of mutants horrors encased within powerful battle armour. Genetically engineered to remove all emotions except hate, and conditioned for minimal individuality and ultimate obedience, the Daleks are driven by one ultimate goal; to become the supreme beings in the universe."
+
+  # Species
+  DALEK: "Dalek"
+
+  # Trait
+  trait_dalek: "Dalek"
+  trait_dalek_desc: "Created by the Kaled scientist Davros in the dying days of the Thousand Year War, the Daleks are a race of mutants horrors encased within powerful battle armour. Genetically engineered to remove all emotions except hate, and conditioned for minimal individuality and ultimate obedience, the Daleks are driven by one ultimate goal; to become the supreme beings in the universe."
+
+  # Skaro System
+  skaro_system_initializer_NAME: "Skaro System"
+  skaro_system_initializer_DESC: "An interpretation of the solar system in which Skaro, homeworld of the Daleks, resides. Unique to the Genesis of the Daleks origin"
