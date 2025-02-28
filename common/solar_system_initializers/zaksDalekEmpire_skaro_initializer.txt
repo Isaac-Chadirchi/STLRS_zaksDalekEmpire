@@ -51,7 +51,7 @@ skaro_system_initializer = {
     planet = {
         name = "Galkorin"
         class = pc_molten
-        orbit_distance = 35
+        orbit_distance = 40
         orbit angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
@@ -62,7 +62,7 @@ skaro_system_initializer = {
     planet = {
         name = "Vestinga"
         class = pc_molten
-        orbit_distance = 5
+        orbit_distance = 10
         orbit_angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
@@ -73,7 +73,7 @@ skaro_system_initializer = {
     planet = {
         name = "Yarenin"
         class = pc_molten
-        orbit_distance = 5
+        orbit_distance = 10
         orbit_angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
@@ -95,7 +95,7 @@ skaro_system_initializer = {
     planet = {
         name = "Haarfaro"
         class = pc_toxic
-        orbit_distance = 20
+        orbit_distance = 10
         orbit_angle = { min = 90 max = 270 }
         size = 14
         has_ring = no
@@ -106,7 +106,7 @@ skaro_system_initializer = {
     planet = {
         name = "Fortenin"
         class = pc_broken
-        orbit_distance = 25
+        orbit_distance = 20
         orbit_angle = { min = 90 max = 270 }
         size = 15
         has_ring = no
@@ -117,7 +117,7 @@ skaro_system_initializer = {
     planet = {
         name = "Preblinga"
         class = pc_barren
-        orbit_distance = 25
+        orbit_distance = 20
         orbit_angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
@@ -150,7 +150,7 @@ skaro_system_initializer = {
     planet = {
         name = "Antilin"
         class = pc_barren
-        orbit_distance = 15
+        orbit_distance = 20
         orbit_angle = { min = 90 max = 270 }
         size = 22
         has_ring = no
@@ -171,7 +171,7 @@ skaro_system_initializer = {
         moon = {
             name = "Varnicon"
             class = pc_ocean
-            orbit_distance = 18
+            orbit_distance = 17
             orbit_angle = { min = 90 max = 270 }
             size = 7
             has_ring = no
@@ -182,7 +182,7 @@ skaro_system_initializer = {
         moon = {
             name = "Mesmerus"
             class = pc_continental
-            orbit_distance = 2
+            orbit_distance = 3
             orbit_angle = { min = 90 max = 270 }
             size = 7
             has_ring = no
@@ -193,7 +193,7 @@ skaro_system_initializer = {
         moon = {
             name = "Calliopticon"
             class = pc_alpine
-            orbit_distance = 2
+            orbit_distance = 3
             orbit_angle = { min = 90 max = 270 }
             size = 7
             has_ring = no
@@ -204,7 +204,7 @@ skaro_system_initializer = {
         moon = {
             name = "Gurnian"
             class = pc_tundra
-            orbit_distance = 2
+            orbit_distance = 3
             orbit_angle = { min = 90 max = 270 }
             size = 7
             has_ring = no
@@ -241,7 +241,7 @@ skaro_system_initializer = {
         moon = {
             name = "Falkor"
             class = pc_frozen
-            orbit_distance = 2
+            orbit_distance = 4
             orbit_angle = { min = 90 max = 270 }
             size = 5
             has_ring = no
@@ -254,7 +254,7 @@ skaro_system_initializer = {
             class = pc_shielded
             orbit_distance = 4
             orbit_angle = { min = 90 max = 270 }
-            size = 10
+            size = 7
             has_ring = no
         }
     }
