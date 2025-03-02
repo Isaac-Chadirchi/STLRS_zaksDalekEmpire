@@ -223,6 +223,10 @@ skaro_system_initializer = {
         starting_planet = yes
         init_effect = {
             prevent_anomaly = yes
+            add_modifier = {
+                modifier = "skaro_irradiated_planet"
+                days = -1
+            }
         }
 
         # Moon 12-1 - Fildor
