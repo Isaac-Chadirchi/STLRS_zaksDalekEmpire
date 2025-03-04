@@ -12,7 +12,7 @@ skaro_irradiated_planet = {
 	district_farming_max = -6
 	district_mining_max = 2
 
-    icon = "gfx/interface/icons/planet_modifiers/pm_irradiated"
+    icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
     icon_frame = 3
 }
 
