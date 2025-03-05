@@ -227,6 +227,10 @@ skaro_system_initializer = {
                 modifier = "skaro_irradiated_planet"
                 days = -1
             }
+            add_modifier = {
+                modifier = "skaro_sulphuric_rain"
+                days = -1
+            }
         }
 
         # Moon 12-1 - Fildor

@@ -1,7 +1,7 @@
 ﻿# AUTHORS: Zak
 # NOTICE:  THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# TODO:    
-# NOTES:   
+# TODO:    none
+# NOTES:   none
 
 l_english:
 
@@ -14,11 +14,11 @@ l_english:
 
   # Skaro System
   skaro_system_initializer_NAME: "Skaro System"
-  skaro_system_initializer_DESC: "An interpretation of the solar system in which Skaro, homeworld of the Daleks, resides. Unique to the Genesis of the Daleks origin"
+  skaro_system_initializer_DESC: "An interpretation of the solar system in which Skaro, homeworld of the Daleks, resides. Unique to the Genesis of the Daleks origin."
 
   # Modifiers
   skaro_irradiated_planet: "Irradiated Planet"
-  skaro_irradiated_planet_desc: "The thousand year long 'Great Neutronic War' has left Skaro irreversibly irradiated, even centuries after it's end"
+  skaro_irradiated_planet_desc: "The thousand year long 'Great Neutronic War' has left Skaro irreversibly irradiated."
   skaro_sulphuric_rain: "Sulphuric Rain"
-  skaro_sulphuric_rain_desc: "Skaro is plauged by Sulphuric Rain, damaging buildings, crops, and people alike"
+  skaro_sulphuric_rain_desc: "Skaro is plauged by Sulphuric Rain, damaging buildings, crops, and people alike."
   
