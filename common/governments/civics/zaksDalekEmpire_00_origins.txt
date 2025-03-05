@@ -1,0 +1,20 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# TODO:	    this
+# NOTES:	This is currently an empty origin, used as a placeholder to give a blank slate when starting the game
+
+origin_genesis_of_the_daleks = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_post_apocalyptic.dds"
+	picture = GFX_origin_post_apocalyptic
+
+    description = "origin_tooltip_genesis_of_the_daleks_effects"
+    
+    potential = {
+        always = yes
+    }
+    possible = {
+        always = yes
+    }
+
+}

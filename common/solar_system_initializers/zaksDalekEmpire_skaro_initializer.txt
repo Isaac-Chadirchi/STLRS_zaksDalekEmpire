@@ -221,6 +221,7 @@ skaro_system_initializer = {
         size = 22
         has_ring = no
         starting_planet = yes
+        # flags = { special_start_planet } Disabled until custom origin implemented 
         init_effect = {
             prevent_anomaly = yes
             add_modifier = {
@@ -230,9 +231,6 @@ skaro_system_initializer = {
             add_modifier = {
                 modifier = skaro_sulphuric_rain
                 days = -1
-            }
-            add_blocker = {
-                type = d_skaro_geyser_swamp
             }
         }
 
