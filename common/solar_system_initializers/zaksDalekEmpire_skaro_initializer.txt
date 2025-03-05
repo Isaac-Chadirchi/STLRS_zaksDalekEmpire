@@ -224,12 +224,15 @@ skaro_system_initializer = {
         init_effect = {
             prevent_anomaly = yes
             add_modifier = {
-                modifier = "skaro_irradiated_planet"
+                modifier = skaro_irradiated_planet
                 days = -1
             }
             add_modifier = {
-                modifier = "skaro_sulphuric_rain"
+                modifier = skaro_sulphuric_rain
                 days = -1
+            }
+            add_blocker = {
+                type = d_skaro_geyser_swamp
             }
         }
 
