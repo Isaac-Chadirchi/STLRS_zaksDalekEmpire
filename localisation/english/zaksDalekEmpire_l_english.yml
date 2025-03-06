@@ -21,7 +21,20 @@ l_english:
   skaro_irradiated_planet_desc: "The thousand year long 'Great Neutronic War' has left Skaro irreversibly irradiated."
   skaro_sulphuric_rain: "Sulphuric Rain"
   skaro_sulphuric_rain_desc: "Skaro is plauged by Sulphuric Rain, damaging buildings, crops, and people alike."
-  
+
+  # Blockers
+  d_skaro_petrified_jungle: "£blocker£ Petrified Jungle"
+  d_skaro_petrified_jungle_desc: "Once a lush and thriving ecosystem, this jungle was turned to stone during the Great Neutronic War."
+  d_skaro_geyser_swamp: "£blocker£ Geyser Swamp"
+  d_skaro_geyser_swamp_desc: "A hotspot of hydrothermal activity, the geysers of Geyser Swamp spew not water, but liquid mercury."
+  d_skaro_wasteland: "£blocker£ Wasteland"
+  d_skaro_wasteland_desc: "The Great Neutronic War has left the soil in this area irradiated and barren."
+  d_skaro_kaled_city_ruins: "£blocker£ Kaled City Ruins"
+  d_skaro_kaled_city_ruins_desc: "Once protected by a massive dome, the Kaled city was destroyed during the final days of the Great Neutronic War."
+  d_skaro_thal_city_ruins: "£blocker£ Thal City Ruins"
+  d_skaro_thal_city_ruins_desc: "Once a domed city similar the Kaled City, the Thal City was destroyed by the newly created Daleks shortly after the creation, as reprisal for the destruction of the Kaled City."
+
+
   # Origin
   origin_genesis_of_the_daleks: "Genesis of the Daleks"
   origin_genesis_of_the_daleks_desc: "PLACEHOLDER"
