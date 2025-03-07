@@ -1,7 +1,7 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# TODO:	    this
-# NOTES:	This is currently an empty origin, used as a placeholder to give a blank slate when starting the game
+# NOTES:	This is currently an empty origin, used as a placeholder to give a blank slate when starting the game.
+# TODO:	    Fill this out with proper custom origin stuff.
 
 origin_genesis_of_the_daleks = {
     is_origin = yes

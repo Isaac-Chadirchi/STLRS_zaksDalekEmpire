@@ -1,7 +1,7 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# TODO:	    this
-# NOTES:	none
+# NOTES:	This file defines various blocker deposits, which are unique to Skaro and will be added via the game start scripts.
+# TODO:	    Balance Changes.
 
 # Petrified Jungle (becomes Restored Farmland)
 d_skaro_petrified_jungle = {

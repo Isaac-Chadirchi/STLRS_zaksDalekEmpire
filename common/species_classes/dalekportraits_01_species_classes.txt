@@ -1,7 +1,7 @@
 # AUTHORS: 	VelociRandom, Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# TODO:		Create a new dalek Archetype, and switch this species class to it
-# NOTES:	none
+# NOTES:	This file creates the different dalek species classes. This file was originally written by VelociRandom.
+# TODO:		Create a new dalek Archetype, and switch this species class to it. Add different species class for human mutant daleks (Blood of the Daleks), hybrid Daleks, etc
 
 DALEK = {
 	archetype = BIOLOGICAL

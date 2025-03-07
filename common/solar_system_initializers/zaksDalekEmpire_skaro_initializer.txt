@@ -1,11 +1,11 @@
 # AUTHORS:  Zak
 # NOTICE:   THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# TODO:     Add Skaro features, Add pre-FTL and pre-Sapients to respective planets, Try and find a way to make skaro use a custom gtfx entity.
 # NOTES:    Doctor Who's lore is an incomprehensible mess at best, so a majority of the planet names are derived from the Dalek language or found in some obscure bit of lore. I've 
 #           gone for the interpretation of a unity solar system with 14 planets, of which Skaro is the 12th. There are no sources for planet sizes at all (there is a source for Skaro
 #           but that states a radius of 10k miles which is over twice that of earth and would result in a size 45 planet, which is stupid) so I made them up to fit with the distances
 #           (which I also made up). Source for all Dalek language references: http://www.spanglefish.com/dalekworld/index.asp?pageid=647798 (I don't know where these came from, but 
 #           it's the closest thing I found to a dictionary). All other information sourced from https://tardis.wiki (not the Fandom wiki).
+# TODO:     Add Skaro blockers and features, Add pre-FTL and pre-Sapients to respective planets, Try and find a way to make skaro use a custom gtfx entity
 
 ### Skaro System
 skaro_system_initializer = {
