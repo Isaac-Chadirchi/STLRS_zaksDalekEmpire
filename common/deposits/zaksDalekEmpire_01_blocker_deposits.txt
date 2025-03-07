@@ -3,7 +3,7 @@
 # TODO:	    this
 # NOTES:	none
 
-# Petrified Jungle (becomes Reclaimed Farmland)
+# Petrified Jungle (becomes Restored Farmland)
 d_skaro_petrified_jungle = {
     category = deposit_cat_blockers
     icon = "gfx/interface/icons/deposits/d_skaro_petrified_jungle.dds"
@@ -12,7 +12,7 @@ d_skaro_petrified_jungle = {
     prerequisites = { tech_quicksand_basin }
 
     planet_modifier = {
-        district_farming_max = -3
+        planet_max_districts_add = -1
     }
     resources = {
         category = deposit_blockers
@@ -39,12 +39,13 @@ d_skaro_geyser_swamp = {
     prerequisites = { tech_noxious_swamp }
     
     planet_modifier = {
-        district_generator_max = -3
+        planet_max_districts_add = -1
     }
     resources = {
         category = deposit_blockers_natural
         cost = {
             energy = 500
+            minerals = 300
         }
     }
 
@@ -92,7 +93,7 @@ d_skaro_kaled_city_ruins = {
     time = 180
     
     planet_modifier = {
-        district_city_max = -1
+        planet_max_districts_add = -1
     }
     resources = {
         category = deposit_blockers

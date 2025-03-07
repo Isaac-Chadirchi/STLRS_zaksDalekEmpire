@@ -34,6 +34,15 @@ l_english:
   d_skaro_thal_city_ruins: "£blocker£ Thal City Ruins"
   d_skaro_thal_city_ruins_desc: "Once a domed city similar the Kaled City, the Thal City was destroyed by the newly created Daleks shortly after the creation, as reprisal for the destruction of the Kaled City."
 
+  # Deposits
+  d_restored_farmland: "Restored Farmland"
+  d_restored_farmland_desc: "What was once a dead jungle has been transformed into lush and fertile farmland."
+  d_hydrothermal_power_plant: "Hydrothermal Power Plant"
+  d_hydrothermal_power_plant_desc: "This facility has allowed for the full exploitation of the Geyser Swamps potential for power production."
+  d_reclaimed_land: "Reclaimed Land"
+  d_reclaimed_land_desc: "What was once an uninhabitable wasteland has been made once again survivable, if not exactly inviting."
+  d_kaalann: "Kaalann, City of the Daleks"
+  d_kaalann_desc: "Built upon the ruins of the Kaled City, Kaalann is the seat of the Dalek Emperor, and the heart of the Dalek Empire."
 
   # Origin
   origin_genesis_of_the_daleks: "Genesis of the Daleks"
