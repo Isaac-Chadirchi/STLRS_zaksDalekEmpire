@@ -1,0 +1,28 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	Creates the various modifiers needed throughout the mod.
+# TODO:	    Balance changes.
+
+# Skaro Modifiers
+skaro_irradiated_planet = {
+    pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.20
+	lithoid_pop_happiness = -0.20
+	planet_jobs_food_produces_mult = -0.50
+	district_farming_max = -6
+	district_mining_max = 2
+
+    icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
+    icon_frame = 3
+}
+
+skaro_sulphuric_rain = {
+    pop_environment_tolerance = -0.10
+    biological_pop_happiness = -0.20
+	lithoid_pop_happiness = -0.20
+    planet_jobs_food_produces_mult = -0.50
+	planet_jobs_engineering_research_produces_mult = 0.25
+
+    icon = "gfx/interface/icons/planet_modifiers/pm_hazardous_weather.dds"
+	icon_frame = 3
+}

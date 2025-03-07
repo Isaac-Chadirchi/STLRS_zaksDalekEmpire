@@ -1,0 +1,304 @@
+# AUTHORS:  Zak
+# NOTICE:   THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:    Doctor Who's lore is an incomprehensible mess at best, so a majority of the planet names are derived from the Dalek language or found in some obscure bit of lore. I've 
+#           gone for the interpretation of a unity solar system with 14 planets, of which Skaro is the 12th. There are no sources for planet sizes at all (there is a source for Skaro
+#           but that states a radius of 10k miles which is over twice that of earth and would result in a size 45 planet, which is stupid) so I made them up to fit with the distances
+#           (which I also made up). Source for all Dalek language references: http://www.spanglefish.com/dalekworld/index.asp?pageid=647798 (I don't know where these came from, but 
+#           it's the closest thing I found to a dictionary). All other information sourced from https://tardis.wiki (not the Fandom wiki).
+# TODO:     Add Skaro blockers and features, Add pre-FTL and pre-Sapients to respective planets, Try and find a way to make skaro use a custom gtfx entity
+
+### Skaro System
+skaro_system_initializer = {
+    
+    # Set name and class of Skaro's sun
+    # Name Vepsra taken from the Dalek word 'Veps', a Dalek measure of artificial sunlight. So named because it's logical that they'd get their unit of measurement for sunlight from the name of their sun (I guess)
+    name = "Vepsra"
+    class = "sc_f" # I chose a F-class star due to it making more energy than the sun, which feeds into the whole 'Hand of Omega' plot in Rememberance of the Daleks. This does push the habitable zone outwards quite significantly
+
+    # Asteroid belts - no source for these, I just felt there should be some
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 100
+    }
+    asteroid_belt = {
+        type = icy_asteroid_belt
+        radius = 275
+    }
+
+    # Sets the system to only be used by custom empires
+    usage = custom_empire # will be replaced with origin once custom origin added
+    flags = { empire_home_system }
+    init_effect = { # Standard empire home system init
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+    # Generate the actual star for the system. I chose to make the star bigger than the Sun, to reflect it's star class
+    planet = {
+        class = star
+        size = 35
+        orbit_distance = 0
+        orbit_angle = 1
+    }
+
+    # Planet 1 - Galkorin
+    # Name derived from the Dalek word 'Galkor', meaning 'Follow me, I am your guide'. So named because it's the closest planet to Vepsra. Planet type is molten due to it being so close to a powerful star
+    planet = {
+        name = "Galkorin"
+        class = pc_molten
+        orbit_distance = 40
+        orbit angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 2 - Vestinga
+    # Name derived from the Dalek word 'Vestin', meaning 'to burn'. So named because it's a molten world. Planet type is molten due to it being so close to a powerful star
+    planet = {
+        name = "Vestinga"
+        class = pc_molten
+        orbit_distance = 10
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 3 - Yarenin
+    # Name dereived from the Dalek word 'Yaren', meaning 'to be fast, quick, or speedy'. So named because I needed a name. Planet type is molten due to it being so close to a powerful star
+    planet = {
+        name = "Yarenin"
+        class = pc_molten
+        orbit_distance = 10
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 4 - Efienin
+    # Name dereived from the Dalek word 'Efien', meaning 'wealth'. So named due to the idea that it may have been theorised to hold great mineral reserves. Planet type is molten due to it being so close to a powerful star
+    planet = {
+        name = "Efienin"
+        class = pc_molten
+        orbit_distance = 10
+        orbit_angle = { min = 90 max = 270 }
+        size = 12
+        has_ring = no
+    }
+
+    # Planet 5 - Haarfaro
+    # Name is a combination of the Dalek word 'Haarfa' (a mist that envelops large areas of Skaro) and the Kaled word 'Skaro' (which meant home), to give an approximation of the name 'Home of the mist'. So named because it's a toxic world. Planet type is toxic due to me coming up with the name before the planet
+    planet = {
+        name = "Haarfaro"
+        class = pc_toxic
+        orbit_distance = 10
+        orbit_angle = { min = 90 max = 270 }
+        size = 14
+        has_ring = no
+    }
+
+    # Planet 6 - Fortenin
+    # Name derived from the Dalek word 'Forten', meaning 'A loud explosion'. So named because it is a broken planet. Planet type is broken due to it being located within a rocky asteroid belt (as if it was destroyed to form it)
+    planet = {
+        name = "Fortenin"
+        class = pc_broken
+        orbit_distance = 20
+        orbit_angle = { min = 90 max = 270 }
+        size = 15
+        has_ring = no
+    }
+
+    # Planet 7 - Preblinga
+    # Name derived from the Dalek word 'Preblinga', meaning 'Stone' or 'Rock'. So named because it is a dry, barren planet. Planet type is Barren, due to being located closer than the habitable zone
+    planet = {
+        name = "Preblinga"
+        class = pc_barren
+        orbit_distance = 20
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 8 - Kaaga
+    # Name derived from the Dalek word 'Kaa', meaning 'Silence'. So named because it is a barren and empty planet. Planet type is Barren, due to being located closer than the habitable zone
+    planet = {
+        name = "Kaaga"
+        class = pc_barren
+        orbit_distance = 5
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 9 - Xerodin
+    # Name derived from the Dalek word 'Xerod', meaning 'desert' or 'barren place'. So named because it is a barren planet. Planet type is Barren, due to being located closer than the habitable zone
+    planet = {
+        name = "Xerodin"
+        class = pc_barren
+        orbit_distance = 5
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Planet 10 - Antilin
+    # From the lore. Antilin was terraformed to mimic Skaro and act as a decoy. It was destroyed by the 'Hand of Omega'. Planet type is Barren, due to it needing to be similar enough to Skaro for it to be a decoy
+    planet = {
+        name = "Antilin"
+        class = pc_barren
+        orbit_distance = 20
+        orbit_angle = { min = 90 max = 270 }
+        size = 22
+        has_ring = no
+    }
+
+    # Planet 11 - Bringdigulga
+    # Name derived from the Dalek word 'Brindigulum', meaning 'to hold a conference or talk between 4 or more Daleks'. So named because of it's 4 moons. Planet type is Gas Giant, because I wanted it to have rings as well as 4 moons.
+    planet = {
+        name = "Bringdigulga"
+        class = pc_gas_giant
+        orbit_distance = 25
+        orbit_angle = { min = 90 max = 270 }
+        size = 30
+        has_ring = yes
+
+        # Moon 11-1 - Varnicon
+        # Loosely based on the lore. Varicon was the home of the Octovarns (To be implemented as a Pre-FTL species for early conquest opportunity). Planet type is Ocean, due to the Octovarns being planned as an aquatic species
+        moon = {
+            name = "Varnicon"
+            class = pc_ocean
+            orbit_distance = 17
+            orbit_angle = { min = 90 max = 270 }
+            size = 7
+            has_ring = no
+        }
+
+        # Moon 11-2 - Mesmerus
+        # Loosely based on the lore. Mesmerus was the home of the Hyptons (To be implemented as a Pre-FTL species for early conquest opportunity). Planet type is Continental, due to the Hyptons being planned as a humanoid species
+        moon = {
+            name = "Mesmerus"
+            class = pc_continental
+            orbit_distance = 3
+            orbit_angle = { min = 90 max = 270 }
+            size = 7
+            has_ring = no
+        }
+
+        # Moon 11-3 - Calliopticon
+        # Loosely based on the lore. Calliopticon was the home of the Meticons (To be implemented as a Pre-FTL species for early conquest opportunity). Planet type is Alpine, due to the Meticons being Dwarves in the lore
+        moon = {
+            name = "Calliopticon"
+            class = pc_alpine
+            orbit_distance = 3
+            orbit_angle = { min = 90 max = 270 }
+            size = 7
+            has_ring = no
+        }
+
+        # Moon 11-4 - Gurnian
+        # Loosely based on the lore. Gurian was the home of the Horrokon (To be implemented as a Pre-Sapient species for early conquest opportunity). Planet type is Tundra, due to Gurnian being described as a swamp planet
+        moon = {
+            name = "Gurnian"
+            class = pc_tundra
+            orbit_distance = 3
+            orbit_angle = { min = 90 max = 270 }
+            size = 7
+            has_ring = no
+        }
+    }
+
+    # Planet 12 - Skaro
+    # The homeworld of the daleks. TODO: find a way to give Skaro a custom entity and atmosphere
+    planet = {
+        name = "Skaro"
+        class = pc_arid
+        orbit_distance = 25
+        orbit_angle = { min = 90 max = 270 }
+        size = 22
+        has_ring = no
+        starting_planet = yes
+        # flags = { special_start_planet } Disabled until custom origin implemented 
+        init_effect = {
+            prevent_anomaly = yes
+            add_modifier = {
+                modifier = skaro_irradiated_planet
+                days = -1
+            }
+            add_modifier = {
+                modifier = skaro_sulphuric_rain
+                days = -1
+            }
+        }
+
+        # Moon 12-1 - Fildor
+        # From the lore. One of Skaro's 3 moons
+        moon = {
+            name = "Fildor"
+            class = pc_barren_cold
+            orbit_distance = 12
+            orbit_angle = { min = 90 max = 270 }
+            size = 5
+            has_ring = no
+        }
+
+        # Moon 12-2 - Falkus
+        # From the lore. One of Skaro's 3 moons
+        moon = {
+            name = "Falkor"
+            class = pc_frozen
+            orbit_distance = 4
+            orbit_angle = { min = 90 max = 270 }
+            size = 5
+            has_ring = no
+        }
+
+        # Moon 12-3 - Omega Mysterium
+        # From the lore. One of Skaro's 3 moons. Protected by an impenetrable force field, it is know as the 'Planet of Mystery'
+        moon = {
+            name = "Omega Mysterium"
+            class = pc_shielded
+            orbit_distance = 4
+            orbit_angle = { min = 90 max = 270 }
+            size = 7
+            has_ring = no
+        }
+    }
+
+    # Planet 13 - Alvega
+    # From the lore. It was the planet closest to Skaro, and home to the Amarylls (to be implemented as a Pre-FTL Plantoid hivemind) 
+    planet = {
+        name = "Alvega"
+        class = pc_tropical
+        orbit_distance = 25
+        orbit_angle = { min = 90 max = 270 }
+        size = 20
+        has_ring = no
+    }
+
+    # Planet 14 - Falgeega
+    # Name derived from the Dalek word 'Flagee', meaning 'to Punish'. So named because it distant to all the other planets, as if it has been banished. Planet type is Frozen, due to being located further than the habitable zone
+    planet = {
+        name = "Falgeega"
+        class = pc_frozen
+        orbit_distance = 75
+        orbit_angle = { min = 90 max = 270 }
+        size = 10
+        has_ring = no
+    }
+
+    # Standard nearby starting systems
+    neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "neighbor_t1_first_colony"
+	}
+}

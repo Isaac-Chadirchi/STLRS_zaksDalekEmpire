@@ -1,0 +1,94 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# TODO:	    This file defines various planetary deposits for Skaro, which will be added by a game start script (and locked behind blockers).
+# NOTES:	none
+
+# Result of clearing the Petrified Jungle
+# Should add farmland
+d_restored_farmland = {
+    is_for_colonizable = yes
+    use_for_min_max_adjustments = yes
+
+    use_weights_for_terraforming_swap_types = no
+    should_swap_deposit_on_terraforming = no
+
+    planet_modifier = {
+        district_farming_max = 3
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Result of clearing the Geyser Swamp
+# Should add a generator district and two technician jobs
+d_hydrothermal_power_plant = {
+    is_for_colonizable = yes
+    use_for_min_max_adjustments = yes
+
+    use_weights_for_terraforming_swap_types = no
+    should_swap_deposit_on_terraforming = no
+
+    planet_modifier = {
+        district_generator_max = 3
+        job_technician_add = 2
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Result of clearing Wasteland and the Thal City
+# Should add a district slot
+d_reclaimed_land = {
+    is_for_colonizable = yes
+    use_for_min_max_adjustments = yes
+
+    use_weights_for_terraforming_swap_types = no
+    should_swap_deposit_on_terraforming = no
+
+    planet_modifier = {
+        district_mining_max = 3
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Result of rebuilding the Kaled City
+# Should add administrator and soldier jobs
+d_kaalann = {
+    is_for_colonizable = yes
+    use_for_min_max_adjustments = yes
+
+    use_weights_for_terraforming_swap_types = no
+    should_swap_deposit_on_terraforming = no
+
+    planet_modifier = {
+        job_administrator_add = 2
+        job_soldier_add = 4
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}

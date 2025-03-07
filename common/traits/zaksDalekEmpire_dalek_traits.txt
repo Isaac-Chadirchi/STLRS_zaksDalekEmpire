@@ -1,6 +1,7 @@
-# Author: Zak
-# All these traits will be automatically assigned to dalek species
-# TODO: once autotrait implemented, change initial to no
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines all the custom traits used by the mod.
+# TODO:	    Rework into seperate traits.
 
 trait_dalek = {
     cost = 2

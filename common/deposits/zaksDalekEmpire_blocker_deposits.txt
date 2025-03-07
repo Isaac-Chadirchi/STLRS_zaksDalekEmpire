@@ -1,0 +1,138 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines various blocker deposits, which are unique to Skaro and will be added via the game start scripts.
+# TODO:	    Balance Changes.
+
+# Petrified Jungle (becomes Restored Farmland)
+d_skaro_petrified_jungle = {
+    category = deposit_cat_blockers
+    icon = "gfx/interface/icons/deposits/d_skaro_petrified_jungle.dds"
+    is_for_colonizable = yes
+    time = 180
+    prerequisites = { tech_quicksand_basin }
+
+    planet_modifier = {
+        planet_max_districts_add = -1
+    }
+    resources = {
+        category = deposit_blockers
+        cost = {
+            energy = 500
+        }
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Geyser Swamp (becomes Hydrothermal Power Plant)
+d_skaro_geyser_swamp = {
+    category = deposit_cat_blockers_natural
+    icon = "gfx/interface/icons/deposits/d_skaro_geyser_swamp.dds"
+    is_for_colonizable = yes
+    time = 180
+    prerequisites = { tech_noxious_swamp }
+    
+    planet_modifier = {
+        planet_max_districts_add = -1
+    }
+    resources = {
+        category = deposit_blockers_natural
+        cost = {
+            energy = 500
+            minerals = 300
+        }
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Wasteland (becomes Reclaimed Land)
+d_skaro_wasteland = {
+    category = deposit_cat_blockers
+    icon = "gfx/interface/icons/deposits/d_wasteland.dds"
+    is_for_colonizable = yes
+    time = 180
+    prerequisites = { tech_quicksand_basin }
+    
+    planet_modifier = {
+        planet_max_districts_add = -1
+    }
+    resources = {
+        category = deposit_blockers
+        cost = {
+            energy = 500
+        }
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Kaled City Ruins (becomes Kaalann)
+d_skaro_kaled_city_ruins = {
+    category = deposit_cat_blockers
+    icon = "gfx/interface/icons/deposits/d_kaled_city_ruins.dds"
+    is_for_colonizable = yes
+    time = 180
+    
+    planet_modifier = {
+        planet_max_districts_add = -1
+    }
+    resources = {
+        category = deposit_blockers
+        cost = {
+            energy = 500
+        }
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}
+
+# Thal City Ruins (becomes Reclaimed Land)
+d_skaro_thal_city_ruins = {
+    category = deposit_cat_blockers
+    icon = "gfx/interface/icons/deposits/d_thal_city_ruins.dds"
+    is_for_colonizable = yes
+    time = 180
+    
+    planet_modifier = {
+        planet_max_districts_add = -1
+    }
+    resources = {
+        category = deposit_blockers
+        cost = {
+            energy = 500
+        }
+    }
+
+    # feature unique to Skaro, therefore prevent random spawning
+    potential = {
+        always = no
+    }
+    drop_weight = {
+        factor = 0
+    }
+}

@@ -1,5 +1,50 @@
-﻿# Author: Zak
+﻿# AUTHORS: Zak
+# NOTICE:  THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:   This file handles all localisation for the mod.
+# TODO:    Continue to update as needed.
 
 l_english:
-trait_dalek:0 "Dalek"
-trait_dalek_desc:0 "Created by the Kaled scientist Davros in the dying days of the Thousand Year War, the Daleks are a race of mutants horrors encased within powerful battle armour. Genetically engineered to remove all emotions except hate, and conditioned for minimal individuality and ultimate obedience, the Daleks are driven by one ultimate goal; to become the supreme beings in the universe."
+
+  # Species
+  DALEK: "Dalek"
+
+  # Trait
+  trait_dalek: "Dalek"
+  trait_dalek_desc: "Created by the Kaled scientist Davros in the dying days of the Great Neutronic War, the Daleks are a race of mutants horrors encased within powerful battle armour. Genetically engineered to remove all emotions except hate, and conditioned for minimal individuality and ultimate obedience, the Daleks are driven by one ultimate goal; to become the supreme beings in the universe."
+
+  # Skaro System
+  skaro_system_initializer_NAME: "Skaro System"
+  skaro_system_initializer_DESC: "An interpretation of the solar system in which Skaro, homeworld of the Daleks, resides.\n\nUnique to the Genesis of the Daleks origin."
+
+  # Modifiers
+  skaro_irradiated_planet: "Irradiated Planet"
+  skaro_irradiated_planet_desc: "The thousand year long 'Great Neutronic War' has left Skaro irreversibly irradiated."
+  skaro_sulphuric_rain: "Sulphuric Rain"
+  skaro_sulphuric_rain_desc: "Skaro is plauged by Sulphuric Rain, damaging buildings, crops, and people alike."
+
+  # Blockers
+  d_skaro_petrified_jungle: "£blocker£ Petrified Jungle"
+  d_skaro_petrified_jungle_desc: "Once a lush and thriving ecosystem, this jungle was turned to stone during the Great Neutronic War."
+  d_skaro_geyser_swamp: "£blocker£ Geyser Swamp"
+  d_skaro_geyser_swamp_desc: "A hotspot of hydrothermal activity, the geysers of Geyser Swamp spew not water, but liquid mercury."
+  d_skaro_wasteland: "£blocker£ Wasteland"
+  d_skaro_wasteland_desc: "The Great Neutronic War has left the soil in this area irradiated and barren."
+  d_skaro_kaled_city_ruins: "£blocker£ Kaled City Ruins"
+  d_skaro_kaled_city_ruins_desc: "Once protected by a massive dome, the Kaled city was destroyed during the final days of the Great Neutronic War."
+  d_skaro_thal_city_ruins: "£blocker£ Thal City Ruins"
+  d_skaro_thal_city_ruins_desc: "Once a domed city similar the Kaled City, the Thal City was destroyed by the newly created Daleks shortly after the creation, as reprisal for the destruction of the Kaled City."
+
+  # Deposits
+  d_restored_farmland: "Restored Farmland"
+  d_restored_farmland_desc: "What was once a dead jungle has been transformed into lush and fertile farmland."
+  d_hydrothermal_power_plant: "Hydrothermal Power Plant"
+  d_hydrothermal_power_plant_desc: "This facility has allowed for the full exploitation of the Geyser Swamps potential for power production."
+  d_reclaimed_land: "Reclaimed Land"
+  d_reclaimed_land_desc: "What was once an uninhabitable wasteland has been made once again survivable, if not exactly inviting."
+  d_kaalann: "Kaalann, City of the Daleks"
+  d_kaalann_desc: "Built upon the ruins of the Kaled City, Kaalann is the seat of the Dalek Emperor, and the heart of the Dalek Empire."
+
+  # Origin
+  origin_genesis_of_the_daleks: "Genesis of the Daleks"
+  origin_genesis_of_the_daleks_desc: "PLACEHOLDER"
+  origin_tooltip_genesis_of_the_daleks_effects: "PLACEHOLDER"
