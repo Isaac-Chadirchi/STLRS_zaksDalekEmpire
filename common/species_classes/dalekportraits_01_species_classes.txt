@@ -13,7 +13,7 @@ KALED_MUTANT = {
 			}
 		}
 	}
-	trait = trait_dalek
+	trait = trait_kaled_mutant
 	gender = no
 	graphical_culture = dalekportraits_01
 	move_pop_sound_effect = "moving_pop_confirmation"
