@@ -7,6 +7,7 @@ l_english:
 
   # Species
   DALEK: "Dalek"
+  KALED_MUTANT: "Kaled Mutant"
 
   # Trait
   trait_dalek: "Dalek"

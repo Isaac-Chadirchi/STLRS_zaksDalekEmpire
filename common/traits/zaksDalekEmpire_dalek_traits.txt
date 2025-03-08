@@ -4,9 +4,9 @@
 # TODO:	    Rework into seperate traits.
 
 trait_dalek = {
-    cost = 2
+    cost = 0
     sorting_priotiy = 99
-    icon = "gfx/interface/icons/traits/trait_dalek.dds"
+    icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
     
     initial = no
     randomized = no
@@ -18,8 +18,8 @@ trait_dalek = {
         always = no
     }
 
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
+    allowed_archetypes = { DALEK }
+    species_class = { KALED_MUTANT }
 
     improves_leaders = yes
     immortal_leaders = yes

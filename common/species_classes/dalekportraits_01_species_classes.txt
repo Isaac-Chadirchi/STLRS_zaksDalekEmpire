@@ -3,8 +3,8 @@
 # NOTES:	This file creates the different dalek species classes. This file was originally written by VelociRandom.
 # TODO:		Create a new dalek Archetype, and switch this species class to it. Add different species class for human mutant daleks (Blood of the Daleks), hybrid Daleks, etc
 
-DALEK = {
-	archetype = BIOLOGICAL
+KALED_MUTANT = {
+	archetype = DALEK
 	possible = {
 		authority = {
 			NOT = {
