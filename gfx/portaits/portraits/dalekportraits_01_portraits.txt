@@ -1,0 +1,157 @@
+# AUTHORS: 	VelociRandom, Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines the specific portraits and their usage. This file was originally written by VelociRandom
+# TODO:		Implement portraits as clothes, to enable switching of icon depending on job
+
+portraits = {
+
+	dalekportrait1_m = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_greetings" 
+	}
+
+	dalekportrait1_commander = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Extra_Commander2.dds"
+		}
+	}
+	dalekportrait1_governor = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_x_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Extra_DalekX.dds"
+		}
+	}
+	dalekportrait1_scientist = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Rank_AllBlack.dds"
+		}
+	}
+	dalekportrait1_emperor = {
+		entity = "dalekportraits_01_emperor_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_emperor_greetings" 
+	}
+
+
+	
+	#Extra Leader Variants
+	dalekportrait1_extra_dalek_scientist = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Rank_Scientist.dds"
+		}
+	}
+	dalekportrait1_extra_supreme = {
+		entity = "dalekportraits_01_supreme_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_supreme_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/_CombinedSupreme.dds"
+		}
+	}
+	dalekportrait1_extra_time_strategist = {
+		entity = "dalekportraits_01_time_strategist_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_supreme_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Extra_TimeStrategist.dds"
+		}
+	}
+
+	dalekportrait1_extra_elite_dalek = {
+		entity = "dalekportraits_01_dalek_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_greetings" 
+		character_textures = { 
+			"gfx/models/portraits/dalekportraits_01/Rank_BlackDome.dds"
+		}
+	}
+
+
+
+
+
+}
+
+
+portrait_groups = {
+
+	dalekportrait1 = {
+		default = dalekportrait1_m
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				portraits = {
+					dalekportrait1_m
+					dalekportrait1_commander
+					dalekportrait1_governor
+					dalekportrait1_scientist
+					dalekportrait1_emperor
+					dalekportrait1_extra_dalek_scientist
+					dalekportrait1_extra_supreme
+					dalekportrait1_extra_time_strategist
+					dalekportrait1_extra_elite_dalek
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+				}
+				portraits = {
+					dalekportrait1_m
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					dalekportrait1_m
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			
+			set = {
+				trigger = {
+					leader_class = commander
+				}
+				portraits = {
+					dalekportrait1_commander
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = governor
+				}
+				portraits = {
+					dalekportrait1_governor
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = scientist
+				}
+				portraits = {
+					dalekportrait1_scientist
+				}
+			}
+
+		}
+	
+		#Leader Scope
+		ruler = {
+			add = {
+				portraits = {
+					dalekportrait1_emperor
+				}
+			}
+		}
+	}	
+}
