@@ -1,6 +1,7 @@
 # AUTHORS: 	VelociRandom, Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# NOTES:	This file defines the specific portraits and their usage. This file was originally written by VelociRandom
+# NOTES:	This file defines the specific portraits and their usage. This file was originally written by VelociRandom.
+#			FOR SOME GOD DAMN REASON, THIS FILE DOESN'T WORK. ALL PREVIOUS EXPERIENCE SUGGESTS IT SHOULD WORK, IT WORKS WHEN I DROP IT INTO THE DEPENDENCY, BUT WHEN IT'S HERE, IT DOESN'T FUCKING WORK. 
 # TODO:		Implement portraits as clothes, to enable switching of icon depending on job
 
 portraits = {
@@ -30,8 +31,6 @@ portraits = {
 	dalekportrait1_emperor = {
 		entity = "dalekportraits_01_emperor_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "dalekportraits_01_dalek_emperor_greetings" 
 	}
-
-
 	
 	#Extra Leader Variants
 	dalekportrait1_extra_dalek_scientist = {
