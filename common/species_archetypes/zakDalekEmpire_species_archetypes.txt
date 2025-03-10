@@ -4,8 +4,8 @@
 # TODO:	    Create a new archetype for Daleks.
 
 # Global Variables
-@dalek_trait_points = 999
-@dalek_max_traits = 999
+@dalek_trait_points = 0
+@dalek_max_traits = 2
 
 # Dalek species archetype - no trait points or picks because of different trait system
 DALEK = {

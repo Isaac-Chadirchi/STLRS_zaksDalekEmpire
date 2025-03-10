@@ -42,7 +42,7 @@ trait_genetic_hatred = {
     icon = "gfx/interface/icons/traits/trait_genetic_hatred.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -73,7 +73,7 @@ trait_travel_machine_1 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_1.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -89,6 +89,7 @@ trait_travel_machine_1 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
     modifier = {
         pop_environment_tolerance = 0.5
         
@@ -103,7 +104,7 @@ trait_travel_machine_2 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_2.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -119,6 +120,7 @@ trait_travel_machine_2 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
     modifier = {
         pop_environment_tolerance = 0.6
         
@@ -133,7 +135,7 @@ trait_travel_machine_3 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_3.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -149,6 +151,7 @@ trait_travel_machine_3 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
     modifier = {
         pop_environment_tolerance = 0.7
         
@@ -163,7 +166,7 @@ trait_travel_machine_4 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_4.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -179,6 +182,7 @@ trait_travel_machine_4 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_5" "trait_travel_machine_6" }
     modifier = {
         pop_environment_tolerance = 0.8
         
@@ -193,7 +197,7 @@ trait_travel_machine_5 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_5.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 98
 
     initial = yes # Debug only
@@ -209,6 +213,7 @@ trait_travel_machine_5 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_6" }
     modifier = {
         pop_environment_tolerance = 0.9
         
@@ -223,7 +228,7 @@ trait_travel_machine_6 = {
     icon = "gfx/interface/icons/traits/trait_travel_machine_6.dds"
     allowed_archetypes = { DALEK }
 
-    cost = -1
+    cost = 0
     sorting_priotiy = 97
 
     initial = yes # Debug only
@@ -239,6 +244,7 @@ trait_travel_machine_6 = {
     species_possible_merge_add = {
         always = no
     }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" }
     modifier = {
         pop_environment_tolerance = 1
         
