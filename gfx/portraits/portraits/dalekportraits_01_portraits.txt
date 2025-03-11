@@ -59,12 +59,7 @@ portraits = {
 		}
 	}
 
-
-
-
-
 }
-
 
 portrait_groups = {
 
@@ -78,18 +73,13 @@ portrait_groups = {
 					dalekportrait1_governor
 					dalekportrait1_scientist
 					dalekportrait1_emperor
+					#extras
 					dalekportrait1_extra_dalek_scientist
 					dalekportrait1_extra_supreme
 					dalekportrait1_extra_time_strategist
 					dalekportrait1_extra_elite_dalek
 				}
 			}
-			#set = {
-			#	trigger = { ... }
-			#	portraits = { ... }
-			#	#using "set =" instead of "add" will first clear any portraits already added
-			#}
-		}
 
 		#species scope
 		species = { #generic portrait for a species
@@ -117,7 +107,16 @@ portrait_groups = {
 			
 			set = {
 				trigger = {
-					leader_class = commander
+					leader_class = admiral
+				}
+				portraits = {
+					dalekportrait1_commander
+				}
+			}
+
+			add = {
+				trigger = {
+					leader_class = general
 				}
 				portraits = {
 					dalekportrait1_commander
