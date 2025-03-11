@@ -2,6 +2,7 @@
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:	This file defines the specific portraits and their usage. This file was originally written by VelociRandom.
 # TODO:		Implement portraits as clothes, to enable switching of icon depending on job
+#			Implement reactive portraits, for the progression of travel machines
 
 portraits = {
 

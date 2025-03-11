@@ -5,7 +5,9 @@
 #           but that states a radius of 10k miles which is over twice that of earth and would result in a size 45 planet, which is stupid) so I made them up to fit with the distances
 #           (which I also made up). Source for all Dalek language references: http://www.spanglefish.com/dalekworld/index.asp?pageid=647798 (I don't know where these came from, but 
 #           it's the closest thing I found to a dictionary). All other information sourced from https://tardis.wiki (not the Fandom wiki).
-# TODO:     Add Skaro blockers and features, Add pre-FTL and pre-Sapients to respective planets, Try and find a way to make skaro use a custom gtfx entity
+# TODO:     Add Skaro blockers and features
+#           Add pre-FTL and pre-Sapients to respective planets
+#           Try and find a way to make skaro use a custom gtfx entity
 
 ### Skaro System
 skaro_system_initializer = {

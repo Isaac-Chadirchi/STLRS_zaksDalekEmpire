@@ -1,7 +1,7 @@
 # AUTHORS: 	VelociRandom, Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# NOTES:	This file defines the graphical culture for dalek ships. This file was originally written by VelociRandom
-# TODO:	
+# NOTES:	This file defines the graphical culture for dalek ships. This file was originally written by VelociRandom.
+# TODO:		none
 
 # Graphical culture is connected to the looks used for ships and cities
 # Setting fallback will allow the game to try and use another culture if the asset is missing
