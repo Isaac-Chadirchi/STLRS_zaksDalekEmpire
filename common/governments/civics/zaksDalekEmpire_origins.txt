@@ -24,7 +24,15 @@ origin_genesis_of_the_daleks = {
                 value = ethic_fanatic_xenophobe
             }
         }
-        # civics = { value = civic_supreme_beings } commented out because it's not yet implemented
+        ethics = {
+            NOR = {
+                value = ethic_pacifist
+                value = ethic_fanatic_pacifist
+                value = ethic_spiritualist
+                value = ethic_fanatic_spiritualist
+            }
+        }
+        civics = { value = civic_supreme_beings }
     }
 
     flags = { custom_start_screen }

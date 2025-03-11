@@ -1,0 +1,38 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file creates the various different civics for the different dalek empires (
+# TODO:	    this
+
+civic_supreme_beings = {
+    icon = "gfx/interface/icons/governments/civics/civic_dalek_generic.dds"
+
+    
+    potential = {
+        species_archetype = { value = DALEK }
+        origin = { value = origin_genesis_of_the_daleks }
+    }
+    possible = {
+        ethics = {
+            OR = {
+                value = ethic_xenophobe
+                value = ethic_fanatic_xenophobe
+            }
+        }
+        ethics = {
+            NOR = {
+                value = ethic_pacifist
+                value = ethic_fanatic_pacifist
+                value = ethic_spiritualist
+                value = ethic_fanatic_spiritualist
+            }
+        }
+        # I might add civic exclusions here, but right now I can't be bothered
+    }
+    pickable_at_start = yes
+    modification = no
+    
+    modifier = {
+        country_war_exhaustion_mult = -0.5
+        country_claim_influence_cost_mult = -0.5
+    }
+}

@@ -5,7 +5,7 @@
 
 # Global Variables
 @dalek_trait_points = 0
-@dalek_max_traits = 2
+@dalek_max_traits = 0
 
 # Dalek species archetype - no trait points or picks because of different trait system
 DALEK = {

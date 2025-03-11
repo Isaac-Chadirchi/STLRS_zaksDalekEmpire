@@ -12,6 +12,13 @@ KALED_MUTANT = {
 				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
 			}
 		}
+		origin = {
+			OR = {
+				value = origin_genesis_of_the_daleks
+				# value = origin_blood_of_the_daleks (To be implemented post 1.0 relases)
+			}
+			
+		}
 	}
 	trait = trait_kaled_mutant
 	gender = no
