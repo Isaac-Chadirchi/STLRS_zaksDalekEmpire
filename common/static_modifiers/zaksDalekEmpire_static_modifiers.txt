@@ -1,7 +1,7 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:	Creates the various modifiers needed throughout the mod.
-# TODO:	    Balance changes.
+# TODO:	    Balance changes
 
 # Skaro Modifiers
 skaro_irradiated_planet = {

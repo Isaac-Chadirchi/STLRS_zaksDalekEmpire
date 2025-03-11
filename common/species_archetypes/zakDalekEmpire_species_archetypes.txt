@@ -1,0 +1,14 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines the different species archetypes used by the mod. Currently, this is only the Dalek archetype.
+# TODO:	    none
+
+# Global Variables
+@dalek_trait_points = 0
+@dalek_max_traits = 2
+
+# Dalek species archetype - no trait points or picks because of different trait system
+DALEK = {
+    species_trait_points = @dalek_trait_points
+    species_max_traits = @dalek_max_traits
+}

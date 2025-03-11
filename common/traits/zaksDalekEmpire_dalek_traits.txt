@@ -1,12 +1,16 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:	This file defines all the custom traits used by the mod.
-# TODO:	    Rework into seperate traits.
+# TODO:	    Balance changes
 
-trait_dalek = {
-    cost = 2
+# Kaled Mutant trait
+trait_kaled_mutant = {
+    icon = "gfx/interface/icons/traits/trait_kaled_mutant.dds"
+    allowed_archetypes = { DALEK }
+    species_class = { KALED_MUTANT }
+
+    cost = 0
     sorting_priotiy = 99
-    icon = "gfx/interface/icons/traits/trait_dalek.dds"
     
     initial = no
     randomized = no
@@ -17,34 +21,235 @@ trait_dalek = {
     species_potential_remove = {
         always = no
     }
+    species_possible_merge_add = {
+        always = no
+    }
 
-    allowed_archetypes = { BIOLOGICAL }
-    species_class = { DALEK }
-
-    improves_leaders = yes
-    immortal_leaders = yes
+    improves_leaders = yes # Adds a leader trait
+    immortal_leaders = yes # daleks don't die of old age (yes, I know they technically degrade, but I ain't doin that)
     
-    infertile = yes
-    forced_happiness = yes
+    infertile = yes # Species will reproduce via a similar method to cloning (but with less copied portraits
+    forced_happiness = yes # this acts as all pops having %50 happiness. I might (MIGHT) change this if I can figure out a better way
     modifier = {
-        pc_nuked_habitability = 0.7
-        pop_environment_tolerance = 0.25
-
-        pop_ethics_shift_speed_mult = -0.9
+        pop_ethics_shift_speed_mult = -0.50
         pop_government_ethic_attraction = 0.75
+    }
+    slave_cost = { energy = 2500 }
+}
 
-        species_leader_exp_gain = -0.75
-        species_empire_size_mult = -0.25
+# Genetic Hatred trait
+trait_genetic_hatred = {
+    icon = "gfx/interface/icons/traits/trait_genetic_hatred.dds"
+    allowed_archetypes = { DALEK }
 
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    modifier = {
+        species_leader_exp_gain = -0.5
+        
         army_collateral_damage_mult = 1
-        army_experience_gain_mult = -0.75
         army_morale = 0.75
         army_disengage_chance = -0.75
-        army_health = 0.25
-        army_damage_mult = 0.5
-        army_alloys_cost_mult = 25
-
     }
-    slave_cost = { energy = 5000 }
+    slave_cost = { energy = 2500 }
+}
 
+# Travel Machine I trait - granted by initial tech
+trait_travel_machine_1 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_1.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    modifier = {
+        pop_environment_tolerance = 0.5
+        
+        army_health = 0.15
+        army_damage_mult = 0.15
+    }
+    slave_cost = { energy = 500 }
+}
+
+# Travel Machine II trait - granted by researched tech
+trait_travel_machine_2 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_2.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    modifier = {
+        pop_environment_tolerance = 0.6
+        
+        army_health = 0.30
+        army_damage_mult = 0.30
+    }
+    slave_cost = { energy = 1000 }
+}
+
+# Travel Machine III trait - granted by researched tech
+trait_travel_machine_3 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_3.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    modifier = {
+        pop_environment_tolerance = 0.7
+        
+        army_health = 0.3
+        army_damage_mult = 0.3
+    }
+    slave_cost = { energy = 1500 }
+}
+
+# Travel Machine IV trait - granted by researched tech
+trait_travel_machine_4 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_4.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_5" "trait_travel_machine_6" }
+    modifier = {
+        pop_environment_tolerance = 0.8
+        
+        army_health = 0.45
+        army_damage_mult = 0.45
+    }
+    slave_cost = { energy = 2000 }
+}
+
+# Travel Machine V trait - granted by researched tech
+trait_travel_machine_5 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_5.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 98
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_6" }
+    modifier = {
+        pop_environment_tolerance = 0.9
+        
+        army_health = 0.6
+        army_damage_mult = 0.6
+    }
+    slave_cost = { energy = 2500 }
+}
+
+# Travel Machine VI trait - granted by researched tech
+trait_travel_machine_6 = {
+    icon = "gfx/interface/icons/traits/trait_travel_machine_6.dds"
+    allowed_archetypes = { DALEK }
+
+    cost = 0
+    sorting_priotiy = 97
+
+    initial = yes # Debug only
+    # initial = no
+    randomized = no
+    modification = no
+    species_potential_add = {
+        always = no
+    }
+    species_potential_remove = {
+        always = no
+    }
+    species_possible_merge_add = {
+        always = no
+    }
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" }
+    modifier = {
+        pop_environment_tolerance = 1
+        
+        army_health = 0.75
+        army_damage_mult = 0.75
+    }
+    slave_cost = { energy = 3000 }
 }

@@ -1,16 +1,31 @@
 ﻿# AUTHORS: Zak
 # NOTICE:  THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:   This file handles all localisation for the mod.
-# TODO:    Continue to update as needed.
+# TODO:    Continue to update as needed
 
 l_english:
 
   # Species
   DALEK: "Dalek"
+  KALED_MUTANT: "Kaled Mutant"
 
   # Trait
-  trait_dalek: "Dalek"
-  trait_dalek_desc: "Created by the Kaled scientist Davros in the dying days of the Great Neutronic War, the Daleks are a race of mutants horrors encased within powerful battle armour. Genetically engineered to remove all emotions except hate, and conditioned for minimal individuality and ultimate obedience, the Daleks are driven by one ultimate goal; to become the supreme beings in the universe."
+  trait_kaled_mutant: "Kaled Mutant"
+  trait_kaled_mutant_desc: "PLACEHOLDER"
+  trait_genetic_hatred: "Genetic Hatred"
+  trait_genetic_hatred_desc: "PLACEHOLDER"
+  trait_travel_machine_1: "Mk I Travel Machine"
+  trait_travel_machine_1_desc: "PLACEHOLDER"
+  trait_travel_machine_2: "Mk II Travel Machine"
+  trait_travel_machine_2_desc: "PLACEHOLDER"
+  trait_travel_machine_3: "Mk III Travel Machine"
+  trait_travel_machine_3_desc: "PLACEHOLDER"
+  trait_travel_machine_4: "Mk IV Travel Machine"
+  trait_travel_machine_4_desc: "PLACEHOLDER"
+  trait_travel_machine_5: "Mk V Travel Machine"
+  trait_travel_machine_5_desc: "PLACEHOLDER"
+  trait_travel_machine_6: "Mk VI Travel Machine"
+  trait_travel_machine_6_desc: "PLACEHOLDER"
 
   # Skaro System
   skaro_system_initializer_NAME: "Skaro System"

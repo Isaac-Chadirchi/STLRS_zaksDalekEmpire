@@ -4,7 +4,7 @@
 # TODO:		none
 
 DalekPortraits = {
-	species_class = DALEK
+	species_class = KALED_MUTANT
 	portraits = {
 		"dalekportrait1"
 	}
