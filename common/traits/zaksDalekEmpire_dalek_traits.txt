@@ -45,8 +45,7 @@ trait_genetic_hatred = {
     cost = 0
     sorting_priotiy = 98
 
-    initial = yes # Debug only
-    # initial = no
+    initial = no
     randomized = no
     modification = no
     species_potential_add = {

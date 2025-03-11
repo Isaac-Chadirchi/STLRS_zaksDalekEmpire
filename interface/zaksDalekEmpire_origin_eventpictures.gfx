@@ -1,0 +1,14 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file sets the sprites for origin pictures. I have no idea if this will work.
+# TODO:	    Add origins for other dalek types
+
+spriteTypes = {
+
+    # Genesis of the Daleks - Kaled Mutant origin
+    spriteType = {
+        name = "GFX_origin_genesis_of_the_daleks"
+        texturefile = "gfx/event_pictures/origins/origin_genesis_of_the_daleks.dds"
+        alwaystransparent = yes
+    }
+}
