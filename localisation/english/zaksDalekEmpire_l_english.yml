@@ -59,7 +59,11 @@ l_english:
   d_kaalann: "Kaalann, City of the Daleks"
   d_kaalann_desc: "Built upon the ruins of the Kaled City, Kaalann is the seat of the Dalek Emperor, and the heart of the Dalek Empire."
 
-  # Origin
+  # Origins
   origin_genesis_of_the_daleks: "Genesis of the Daleks"
   origin_genesis_of_the_daleks_desc: "PLACEHOLDER"
   origin_tooltip_genesis_of_the_daleks_effects: "PLACEHOLDER"
+
+  # Civics
+  civic_supreme_beings: "Supreme Beings"
+  civic_supreme_beings_desc: "PLACEHOLDER"
