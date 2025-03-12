@@ -36,7 +36,7 @@ origin_genesis_of_the_daleks = {
     }
 
     flags = { custom_start_screen }
-
+    initializers = { skaro_system_initializer } # add other system initialisers here as time goes on
     preferred_planet_class_neighbor = no
 
     traits = {

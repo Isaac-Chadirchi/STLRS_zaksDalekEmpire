@@ -28,7 +28,7 @@ skaro_system_initializer = {
     }
 
     # Sets the system to only be used by custom empires
-    usage = custom_empire # will be replaced with origin once custom origin added
+    usage = origin
     flags = { empire_home_system }
     init_effect = { # Standard empire home system init
 		every_neighbor_system = {
