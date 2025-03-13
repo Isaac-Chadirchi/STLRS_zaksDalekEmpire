@@ -25,7 +25,7 @@ trait_kaled_mutant = {
         always = no
     }
 
-    improves_leaders = yes # Adds a leader trait
+    hide_age = yes
     immortal_leaders = yes # daleks don't die of old age (yes, I know they technically degrade, but I ain't doin that)
     
     infertile = yes # Species will reproduce via a similar method to cloning (but with less copied portraits
@@ -154,8 +154,8 @@ trait_travel_machine_3 = {
     modifier = {
         pop_environment_tolerance = 0.7
         
-        army_health = 0.3
-        army_damage_mult = 0.3
+        army_health = 0.45
+        army_damage_mult = 0.45
     }
     slave_cost = { energy = 1500 }
 }
@@ -185,8 +185,8 @@ trait_travel_machine_4 = {
     modifier = {
         pop_environment_tolerance = 0.8
         
-        army_health = 0.45
-        army_damage_mult = 0.45
+        army_health = 0.6
+        army_damage_mult = 0.6
     }
     slave_cost = { energy = 2000 }
 }
@@ -216,8 +216,8 @@ trait_travel_machine_5 = {
     modifier = {
         pop_environment_tolerance = 0.9
         
-        army_health = 0.6
-        army_damage_mult = 0.6
+        army_health = 0.75
+        army_damage_mult = 0.75
     }
     slave_cost = { energy = 2500 }
 }
@@ -247,8 +247,12 @@ trait_travel_machine_6 = {
     modifier = {
         pop_environment_tolerance = 1
         
-        army_health = 0.75
-        army_damage_mult = 0.75
+        army_health = 0.9
+        army_damage_mult = 0.9
     }
     slave_cost = { energy = 3000 }
 }
+
+#leader_trait_dalek_leader - {
+#    allowed_origins = { origin_genesis_of_the_daleks }
+#}

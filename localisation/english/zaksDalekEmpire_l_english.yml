@@ -9,7 +9,7 @@ l_english:
   DALEK: "Dalek"
   KALED_MUTANT: "Kaled Mutant"
 
-  # Trait
+  # Species Traits
   trait_kaled_mutant: "Kaled Mutant"
   trait_kaled_mutant_desc: "PLACEHOLDER"
   trait_genetic_hatred: "Genetic Hatred"
