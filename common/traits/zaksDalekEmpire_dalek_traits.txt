@@ -10,18 +10,21 @@ trait_kaled_mutant = {
     species_class = { KALED_MUTANT }
 
     cost = 0
-    sorting_priotiy = 99
+    sorting_priority = 99
     
     initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
+        always = no
+    }
+    species_possible_merge_remove = {
         always = no
     }
 
@@ -43,26 +46,28 @@ trait_genetic_hatred = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 98
 
     initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
+    species_possible_merge_remove = {
+        always = no
+    }
+
+
     modifier = {
         species_leader_exp_gain = -0.5
-        
         army_collateral_damage_mult = 1
-        army_morale = 0.75
-        army_disengage_chance = -0.75
     }
     slave_cost = { energy = 2500 }
 }
@@ -73,28 +78,33 @@ trait_travel_machine_1 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
 
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 0.5
         
         army_health = 0.15
         army_damage_mult = 0.15
     }
+
     slave_cost = { energy = 500 }
 }
 
@@ -104,22 +114,26 @@ trait_travel_machine_2 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
 
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_1" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 0.6
         
@@ -135,22 +149,26 @@ trait_travel_machine_3 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
 
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_4" "trait_travel_machine_5" "trait_travel_machine_6" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 0.7
         
@@ -166,22 +184,26 @@ trait_travel_machine_4 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_5" "trait_travel_machine_6" }
 
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_5" "trait_travel_machine_6" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 0.8
         
@@ -197,22 +219,26 @@ trait_travel_machine_5 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 98
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_6" }
 
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_6" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 0.9
         
@@ -228,22 +254,26 @@ trait_travel_machine_6 = {
     allowed_archetypes = { DALEK }
 
     cost = 0
-    sorting_priotiy = 97
-
+    sorting_priority = 97
+    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" }
+    
     initial = yes # Debug only
     # initial = no
     randomized = no
-    modification = no
+    # modification = no     Apparently, this has been deprecated. Wiki seems to be out of date (no surprises there)
     species_potential_add = {
         always = no
     }
-    species_potential_remove = {
+    species_possible_remove = {
         always = no
     }
     species_possible_merge_add = {
         always = no
     }
-    opposites = { "trait_travel_machine_1" "trait_travel_machine_2" "trait_travel_machine_3" "trait_travel_machine_4" "trait_travel_machine_5" }
+    species_possible_merge_remove = {
+        always = no
+    }
+
     modifier = {
         pop_environment_tolerance = 1
         
@@ -252,7 +282,3 @@ trait_travel_machine_6 = {
     }
     slave_cost = { energy = 3000 }
 }
-
-#leader_trait_dalek_leader - {
-#    allowed_origins = { origin_genesis_of_the_daleks }
-#}
