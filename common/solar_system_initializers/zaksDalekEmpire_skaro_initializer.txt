@@ -54,7 +54,7 @@ skaro_system_initializer = {
         name = "Galkorin"
         class = pc_molten
         orbit_distance = 40
-        orbit angle = { min = 90 max = 270 }
+        orbit_angle = { min = 90 max = 270 }
         size = 10
         has_ring = no
     }

@@ -6,7 +6,6 @@
 # Petrified Jungle (becomes Restored Farmland)
 d_skaro_petrified_jungle = {
     category = deposit_cat_blockers
-    icon = "gfx/interface/icons/deposits/d_skaro_petrified_jungle.dds"
     is_for_colonizable = yes
     time = 180
     prerequisites = { tech_quicksand_basin }
@@ -33,7 +32,6 @@ d_skaro_petrified_jungle = {
 # Geyser Swamp (becomes Hydrothermal Power Plant)
 d_skaro_geyser_swamp = {
     category = deposit_cat_blockers_natural
-    icon = "gfx/interface/icons/deposits/d_skaro_geyser_swamp.dds"
     is_for_colonizable = yes
     time = 180
     prerequisites = { tech_noxious_swamp }
@@ -61,7 +59,6 @@ d_skaro_geyser_swamp = {
 # Wasteland (becomes Reclaimed Land)
 d_skaro_wasteland = {
     category = deposit_cat_blockers
-    icon = "gfx/interface/icons/deposits/d_wasteland.dds"
     is_for_colonizable = yes
     time = 180
     prerequisites = { tech_quicksand_basin }
@@ -88,7 +85,6 @@ d_skaro_wasteland = {
 # Kaled City Ruins (becomes Kaalann)
 d_skaro_kaled_city_ruins = {
     category = deposit_cat_blockers
-    icon = "gfx/interface/icons/deposits/d_kaled_city_ruins.dds"
     is_for_colonizable = yes
     time = 180
     
@@ -114,7 +110,6 @@ d_skaro_kaled_city_ruins = {
 # Thal City Ruins (becomes Reclaimed Land)
 d_skaro_thal_city_ruins = {
     category = deposit_cat_blockers
-    icon = "gfx/interface/icons/deposits/d_thal_city_ruins.dds"
     is_for_colonizable = yes
     time = 180
     

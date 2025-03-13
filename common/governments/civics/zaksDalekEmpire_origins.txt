@@ -46,7 +46,7 @@ origin_genesis_of_the_daleks = {
     max_once_global = yes
     
     random_weight = {
-        0
+        base = 0
     }
 
 }

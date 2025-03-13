@@ -5,7 +5,7 @@
 
 # Result of clearing the Petrified Jungle
 # Should add farmland
-d_restored_farmland = {
+d_skaro_restored_farmland = {
     is_for_colonizable = yes
     use_for_min_max_adjustments = yes
 
@@ -27,7 +27,7 @@ d_restored_farmland = {
 
 # Result of clearing the Geyser Swamp
 # Should add a generator district and two technician jobs
-d_hydrothermal_power_plant = {
+d_skaro_hydrothermal_power_plant = {
     is_for_colonizable = yes
     use_for_min_max_adjustments = yes
 
@@ -50,7 +50,7 @@ d_hydrothermal_power_plant = {
 
 # Result of clearing Wasteland and the Thal City
 # Should add a district slot
-d_reclaimed_land = {
+d_skaro_reclaimed_land = {
     is_for_colonizable = yes
     use_for_min_max_adjustments = yes
 
@@ -72,7 +72,7 @@ d_reclaimed_land = {
 
 # Result of rebuilding the Kaled City
 # Should add administrator and soldier jobs
-d_kaalann = {
+d_skaro_kaalann = {
     is_for_colonizable = yes
     use_for_min_max_adjustments = yes
 
@@ -80,7 +80,7 @@ d_kaalann = {
     should_swap_deposit_on_terraforming = no
 
     planet_modifier = {
-        job_administrator_add = 2
+        job_administrator_add = 2 # FIXME: game is throwing an invalid modifier error on this line, presumably to do with the job type
         job_soldier_add = 4
     }
 
