@@ -25,8 +25,8 @@ trait_kaled_mutant = {
         always = no
     }
 
-    hide_age = yes
     immortal_leaders = yes # daleks don't die of old age (yes, I know they technically degrade, but I ain't doin that)
+    hide_age = yes
     
     infertile = yes # Species will reproduce via a similar method to cloning (but with less copied portraits
     forced_happiness = yes # this acts as all pops having %50 happiness. I might (MIGHT) change this if I can figure out a better way
