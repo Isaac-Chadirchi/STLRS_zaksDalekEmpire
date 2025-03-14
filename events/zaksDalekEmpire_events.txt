@@ -5,16 +5,35 @@
 
 namespace = zaksDalekEmpire_events
 
-# Game Start Event 01 - logs mod as installed
+# GAME START EVENTS
+
+# Event 01 - Game Start - Logs the mod as being installed
 event = {
-    id = zaksDalekEmpire_events.game_start_1
+    id = zaksDalekEmpire_events.1
     hide_window = yes
     is_triggered_only = yes
     trigger = {
         NOT = { has_global_flag = zaksDalekEmpire_installed }
     }
     immediate = {
-        log = "Zak's Dalek Empire is installed"
+        log = "Zak's Dalek Empire has been loaded! EXTERMINATE!"
         set_global_flag = zaksDalekEmpire_installed
+    }
+}
+
+# Event 02 - Game Start - Skaro setup, called by empire_init_capital_planet
+# root = planet, capital
+# from = species, main
+planet_event = {
+    id = zaksDalekEmpire_events.2
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = { has_planet_flag = planet_skaro }
+    immediate = {
+        log = "DEBUG: Zak's Dalek Empire: Event 2 fired for [This.Owner.GetRealName]"
+        generate_skaro_deposits_and_blockers = yes
+            generate_start_buildings_and_districts = yes # generate_skaro_buildings_and_districts = yes (not yet created)
+            generate_start_pops = yes
+            generate_home_planet_final_pass = yes
     }
 }

@@ -29,7 +29,7 @@ skaro_system_initializer = {
 
     # Sets the system to only be used by custom empires
     usage = origin
-    flags = { empire_home_system }
+    flags = { empire_home_system skaro_system }
     init_effect = { # Standard empire home system init
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -223,7 +223,7 @@ skaro_system_initializer = {
         size = 22
         has_ring = no
         starting_planet = yes
-        # flags = { special_start_planet } Disabled until custom origin implemented 
+        flags = { special_start_planet planet_skaro } # special_start_planet disables the default capital planet setup
         init_effect = {
             prevent_anomaly = yes
             add_modifier = {

@@ -1,9 +1,10 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:	This file defines various blocker deposits, which are unique to Skaro and will be added via the game start scripts.
-# TODO:	    Balance Changes
+# TODO:	    Fix Petrified Jungle. Balance Changes
 
 # Petrified Jungle (becomes Restored Farmland)
+# FIXME: For some reason, this is removing all agri districts when cleared. I don't know why.
 d_skaro_petrified_jungle = {
     category = deposit_cat_blockers
     is_for_colonizable = yes
@@ -13,6 +14,7 @@ d_skaro_petrified_jungle = {
     planet_modifier = {
         planet_max_districts_add = -1
     }
+    blocker_swap_types = { d_skaro_restored_farmland }
     resources = {
         category = deposit_blockers
         cost = {
@@ -39,6 +41,7 @@ d_skaro_geyser_swamp = {
     planet_modifier = {
         planet_max_districts_add = -1
     }
+    blocker_swap_types = { d_skaro_hydrothermal_power_plant }
     resources = {
         category = deposit_blockers_natural
         cost = {
@@ -66,6 +69,7 @@ d_skaro_wasteland = {
     planet_modifier = {
         planet_max_districts_add = -1
     }
+    blocker_swap_types = { d_skaro_reclaimed_land }
     resources = {
         category = deposit_blockers
         cost = {
@@ -91,6 +95,7 @@ d_skaro_kaled_city_ruins = {
     planet_modifier = {
         planet_max_districts_add = -1
     }
+    blocker_swap_types = { d_skaro_kaalann }
     resources = {
         category = deposit_blockers
         cost = {
@@ -116,6 +121,7 @@ d_skaro_thal_city_ruins = {
     planet_modifier = {
         planet_max_districts_add = -1
     }
+    blocker_swap_types = { d_skaro_reclaimed_land }
     resources = {
         category = deposit_blockers
         cost = {

@@ -1,16 +1,26 @@
 # AUTHORS: 	Zak
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
-# NOTES:	PLACEHOLDER
+# NOTES:	This file adds extra event calls to the vanilla on_actions, which is vital for setting up the mod correctly.
 # TODO:	    this
 
-# On game start / load, log that the mod is installed
+# Fired when the game starts
 on_game_start = {
     events = {
-        zaksDalekEmpire_events.game_start_1
+        zaksDalekEmpire_events.1
     }
 }
+
+# Fired when loading a single-player game
 on_single_player_save_game_load = {
     events = {
-        zaksDalekEmpire_events.game_start_1
+        zaksDalekEmpire_events.1
+    }
+}
+
+# Fired during empire inialisation when starting a new game.
+# Called before empire_init_create_capital_pops
+empire_init_capital_planet = {
+    events = {
+        zaksDalekEmpire_events.2
     }
 }

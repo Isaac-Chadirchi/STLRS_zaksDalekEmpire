@@ -2,3 +2,21 @@
 # NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
 # NOTES:	PLACEHOLDER
 # TODO:	    this
+
+# Special for Skaro
+generate_skaro_deposits_and_blockers = {
+    optimize_memory
+    clear_deposits = yes
+    add_deposit = d_skaro_kaled_city_ruins
+    add_deposit = d_skaro_thal_city_ruins
+    add_deposit = d_skaro_petrified_jungle
+    while = {
+        count = 2
+        add_deposit = d_skaro_geyser_swamp
+    }
+    while = {
+        count = 3
+        add_deposit = d_skaro_wasteland
+    }
+    
+}
