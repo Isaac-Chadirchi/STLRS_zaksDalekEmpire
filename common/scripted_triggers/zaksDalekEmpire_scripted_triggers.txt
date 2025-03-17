@@ -1,0 +1,15 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file overwrites select vanilla triggers
+# TODO:     none
+
+# Overwrites the vanilla is_organic_species trigger to add the DALEK archetype
+is_organic_species = {
+	species = {
+		OR = {
+			is_archetype = BIOLOGICAL # original trigger did not include pre-sapient classes
+			is_archetype = LITHOID
+            is_archetype = DALEK
+		}
+	}
+}
