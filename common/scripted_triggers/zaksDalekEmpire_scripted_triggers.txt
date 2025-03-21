@@ -13,3 +13,21 @@ is_organic_species = {
 		}
 	}
 }
+
+can_assemble_dalek_pop = {
+	species = { is_archetype = DALEK }
+	planet = {
+		OR = {
+			NOT = { exists = assembling_species }
+			AND = {
+				exists = assembling_species
+				assembling_species = {
+					OR = {
+						is_archetype = DALEK
+						is_robotic = yes
+					}
+				}
+			}
+		}
+	}
+}

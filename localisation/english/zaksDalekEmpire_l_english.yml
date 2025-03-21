@@ -67,3 +67,12 @@ l_english:
   # Civics
   civic_supreme_beings: "Supreme Beings"
   civic_supreme_beings_desc: "PLACEHOLDER"
+
+  # Buildings
+  building_dalek_reproduction_facility: "Dalek Reproduction Facility"
+  building_dalek_reproduction_facility_desc: "PLACEHOLDER"
+
+  # Jobs
+  job_reproduction_technician: "Reproduction Technician"
+  job_reproduction_technician_desc: "PLACEHOLDER"
+  mod_job_reproduction_technician_add: "Reproduction Technician Jobs"

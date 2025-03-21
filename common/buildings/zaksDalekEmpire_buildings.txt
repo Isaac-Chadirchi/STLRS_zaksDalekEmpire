@@ -1,0 +1,49 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines custom buildings for the mod.
+# TODO:     This
+
+building_dalek_reproduction_facility = {
+    icon = building_robot_assembly_plant # Reusing this sprite
+    category = pop_assembly
+    position_priority = 1 # Should be displayed just behind the planetary capital
+
+    base_buildtime = @b4_time
+    base_cap_amount = 1
+    
+    potential = {
+        exists = owner
+        owner = { 
+            founder_species = { 
+                is_archetype = DALEK
+            }
+        }
+    }
+
+    destroy_trigger = { 
+        owner = {
+            founder_species = {
+                NOT = { is_archetype = DALEK }
+            }
+        }
+    }
+
+    planet_modifier = {
+		job_reproduction_technician_add = 2
+	}
+
+    resources = {
+        category = planet_buildings # based off of the hive mind pop assembly buildings. I hope this means the AI will prioritise building these?
+        cost = {
+            minerals = 500
+        }
+        upkeep = {
+            energy = 2
+            alloys = 5
+        }
+    }
+
+    triggered_desc = {
+        # Tooltip for conflict with robot assembly / cloning vats goes here...
+    }
+}

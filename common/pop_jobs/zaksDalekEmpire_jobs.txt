@@ -1,0 +1,42 @@
+# AUTHORS: 	Zak
+# NOTICE:	THIS CODE IS, UNDER NO CIRCUMSTANCES, TO BE USED IN THE TRAINING OF GENERATIVE AI MODELS. INCLUSION OF THIS FILE IN GENERATIVE AI TRAINING DATA IS STRICTLY PROHIBITED.
+# NOTES:	This file defines different jobs for the mod.
+# TODO:	    this
+
+reproduction_technician = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_robot_assembly_plant
+    icon = replicator
+
+    possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+    possible = { species = { is_archetype = DALEK } }
+
+    triggered_planet_modifier = {
+        potential = {
+            can_assemble_dalek_pop = yes
+        }
+        modifier = {
+            planet_pop_assembly_organic_add = 2
+        }
+    }
+
+    resources = {
+        category = planet_pop_assemblers
+        upkeep = {
+            food = 5
+        }
+    }
+
+    weight = { 
+        weight = @spawner_drone_job_weight  # reusing the vanilla value from species assembler
+    }
+
+}
