@@ -74,5 +74,6 @@ l_english:
 
   # Jobs
   job_reproduction_technician: "Reproduction Technician"
+  job_reproduction_technician_plural: "Reproduction Technicians"
   job_reproduction_technician_desc: "PLACEHOLDER"
   mod_job_reproduction_technician_add: "Reproduction Technician Jobs"
