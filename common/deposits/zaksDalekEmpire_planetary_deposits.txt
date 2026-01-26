@@ -41,12 +41,12 @@ d_skaro_hydrothermal_power_plant = {
 
     planet_modifier = {
         district_generator_max = 3
-        job_technician_add = 2
+        job_technician_add = 100
     }
     triggered_planet_modifier = {
         potential = { always = yes }
         district_generator_max = 3
-        job_technician_add = 2
+        job_technician_add = 100
         mult = value:natural_desposit_district_amount_multiplier
     }
 
@@ -97,13 +97,13 @@ d_skaro_kaalann = {
     should_swap_deposit_on_terraforming = no
 
     planet_modifier = {
-        job_administrator_add = 2 # FIXME: game is throwing an invalid modifier error on this line, presumably to do with the job type
-        job_soldier_add = 4
+        job_administrator_add = 100 # FIXME: game is throwing an invalid modifier error on this line, presumably to do with the job type
+        job_soldier_add = 200
     }
     triggered_planet_modifier = {
         potential = { always = yes }
-        job_administrator_add = 2 # FIXME: game is throwing an invalid modifier error on this line, presumably to do with the job type
-        job_soldier_add = 4
+        job_administrator_add = 100 # FIXME: game is throwing an invalid modifier error on this line, presumably to do with the job type
+        job_soldier_add = 200
     }
 
     # feature unique to Skaro, therefore prevent random spawning
