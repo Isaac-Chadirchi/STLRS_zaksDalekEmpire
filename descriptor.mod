@@ -3,4 +3,4 @@ tags={
 	"Species"
 }
 name="Zak's Dalek Empire"
-supported_version="v3.14.159265"
+supported_version="v4.2.*"

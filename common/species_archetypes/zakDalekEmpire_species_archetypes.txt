@@ -11,4 +11,12 @@
 DALEK = {
     species_trait_points = @dalek_trait_points
     species_max_traits = @dalek_max_traits
+
+    resources = {
+        category = planet_pops
+
+        # Resource production from other sources
+        inline_script = "pop_resources/pop_misc_production"
+    }
+
 }

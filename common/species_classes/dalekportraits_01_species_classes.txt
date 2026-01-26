@@ -25,5 +25,6 @@ KALED_MUTANT = {
 	gender = no
 	graphical_culture = dalekportraits_01
 	move_pop_sound_effect = "moving_pop_confirmation"
+	resources = {}
 }
 
