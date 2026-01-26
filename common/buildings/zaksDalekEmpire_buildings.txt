@@ -29,7 +29,7 @@ building_dalek_reproduction_facility = {
     }
 
     planet_modifier = {
-		job_reproduction_technician_add = 2
+		job_reproduction_technician_add = 200
 	}
 
     resources = {
